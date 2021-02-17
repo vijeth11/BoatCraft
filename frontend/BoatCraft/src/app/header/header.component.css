@@ -1,0 +1,31 @@
+.navbar-brand{
+    font-size: 28px;
+    font-family: 'Source Serif Pro', serif;
+    margin: 15px 0 0 0;
+    float: left;
+    color: #424242;
+}
+
+.primary-header{
+    background-color:white;
+    box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 30%);
+    padding: 15px 0;
+    position: relative;
+}
+
+.inner-width{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#primary-headerOptions{
+    margin-left: 5vw;
+    margin-top: 1.5vh;
+}
+
+.nav-item a{
+    padding: 19px 4vh 19px 0;
+    font-size: 16px;
+    display: block;
+    color: #424242;
+}

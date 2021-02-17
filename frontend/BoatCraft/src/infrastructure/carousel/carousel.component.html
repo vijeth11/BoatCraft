@@ -1,0 +1,40 @@
+<div class="carousel">  
+    <ng-content></ng-content>
+
+  <!-- controls -->
+  <button class="control prev" (click)="onPreviousClick()">
+    <span class="arrow left"></span>
+  </button>
+  <button class="control next" (click)="onNextClick()">
+    <span class="arrow right"></span>
+  </button>
+</div>
+
+<!-- caption -->
+<div class="caption" *ngIf="displayCaption" @fadeInTitle>
+  <div class="title">
+    {{ title }}
+  </div>
+  <div style="margin-left:39%">
+    <div class="Border-line"></div>
+  </div>
+  <div class="discription">
+    {{ discription }}
+  </div>
+  <div class="page-buttons">
+    <div class="row">
+      <div class="col-sm-6">
+        <a class="photo">
+          <i class="fa fa-picture-o"></i>
+          Photos
+        </a>
+      </div>
+      <div class="col-sm-6">
+        <a class="about">
+          <i class="fa fa-info-circle"></i>
+          About
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,78 @@
+<div class="row">
+  <div class="col-md-12 carousal">
+    <app-carousel 
+    [displayCaption]="true"
+    [title]="title"
+    [discription]="discription">
+      <ng-container *ngFor="let slide of slides;">
+        <img appCarouselSlide
+        [src]="slide.src"
+        />
+      </ng-container>
+    </app-carousel>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 inspiration">
+    <div class="inner-container">
+      <div class="wrapper">
+        <div class="clearfix row">
+          <div class="about-us-block col-md-6">
+            <h3>About Us</h3>
+            <div class="title-block4"></div>
+            <p></p>
+            <p>
+              "Maecenas condimentum vitae lectus nec tristique sed quis est ac est elementum ultricies donec fringilla ipsum nisl, 
+              sodales mollis purus vehicula sit amet. Naman laoreet massa id interdum suscipit. Pellentesque tempor varius felis, 
+              in semper libero fermentum sit amet Donec dignissim purus eu lacus facilisis euismod."
+            </p>
+            <p></p>
+            <a href="#" class="button0">
+              <i class="fa fa-arrow-circle-right"></i>
+              Learn More
+            </a>
+          </div>
+          <div class="about-us-block-image col-md-6">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="yatch-wrapper col-md-12">
+    <div class="yatch-inner-wrapper">
+      <div class="yatch-section">
+        <div class="yatch-section-carousel-wrapper">
+          <h3 class="yacht-title">Our Yachts</h3>
+          <div class="title-block5"></div>
+          <p class="yatch-intro-text">
+            "Choose from a wide selection of boats ranging from luxury motor yachts 
+            to classic sailing yachts, we have every type of boat available to meet 
+            your needs. We also take custom orders and will help you acquire a specific 
+            yacht."
+          </p>
+          
+          <div class="Yatch-card">
+              <div class="Yatch-image">
+                <a href="http://themes.quitenicestuff2.com/yachtcharterwp/yacht_charters/super-yacht-4/" rel="bookmark" title="Super Yacht">
+                  <img src="http://themes.quitenicestuff2.com/yachtcharterwp/wp-content/uploads/2016/10/image22-500x370.jpg" alt="">							
+                </a>
+              </div>
+              <div class="yatch-block-content">
+                  <h3>
+                    <a href="http://themes.quitenicestuff2.com/yachtcharterwp/yacht_charters/super-yacht-4/" rel="bookmark" title="Super Yacht">Super Yacht</a>
+                  </h3>
+                  <div class="title-block6"></div>
+                  <ul>
+                    <li><span>Base:</span> "Bahamas"</li>
+                    <li><span>Berths:</span> 20</li>
+                    <li><span>Price:</span> $50,000 / Week</li>
+                  </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

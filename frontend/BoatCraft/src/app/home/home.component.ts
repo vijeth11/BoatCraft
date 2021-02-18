@@ -14,9 +14,36 @@ export class HomeComponent implements OnInit {
     { src: "./assets/home/boat-craft-2-bc-65-scaled.jpg" },
     { src: "./assets/home/boat-craft-3-bc-65-scaled.jpg" }
   ];
+  public cards = [
+    {
+      "name": "Super",
+      "price": "50,000",
+      "berth": "20",
+      "title": "Super-yatch"
+    },
+    {
+      "name": "Super",
+      "price": "50,000",
+      "berth": "20",
+      "title": "Super-yatch"
+    },
+    {
+      "name": "Super",
+      "price": "50,000",
+      "berth": "20",
+      "title": "Super-yatch"
+    },
+    {
+      "name": "Super",
+      "price": "50,000",
+      "berth": "20",
+      "title": "Super-yatch"
+    }
+  ]
   constructor() { }
 
   ngOnInit() {
   }
 
+  
 }

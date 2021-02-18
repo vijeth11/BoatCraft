@@ -1,3 +1,4 @@
+import { CardComponent } from './Card/card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CarouselComponent } from './carousel/carousel.component';
@@ -7,7 +8,8 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
 @NgModule({
   declarations: [
     CarouselComponent, 
-    CarouselSlideDirective
+    CarouselSlideDirective,
+    CardComponent
   ],
   imports: [
     CommonModule,
@@ -15,7 +17,8 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
   ],
   exports:[ 
     CarouselComponent, 
-    CarouselSlideDirective
+    CarouselSlideDirective,
+    CardComponent
   ]
 })
 export class InfrastructureModule { }

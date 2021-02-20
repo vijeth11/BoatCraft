@@ -122,3 +122,74 @@
     margin: 0 auto 50px auto;
     text-align: center;
 }
+
+.full-width-message-wrapper{
+    width:100%;
+    padding: 80px 0px;
+    background-image: url("/assets/home/boat-craft-2-bc-65-scaled.jpg");
+    background-size: 100% 153%;
+    background-repeat: no-repeat;
+}
+
+.full-width-inner{
+    width:100%;
+    margin: 0 auto;
+}
+
+.full-width-inner h3{
+    font-size: 22px;
+    text-align: center;
+    line-height: 160%;
+    width: 75%;
+    margin: 0 auto;
+    color:#fff;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.full-width-inner a{
+    margin-bottom: 0vh;
+    float: right;
+}
+
+.full-width-inner-gallery{
+    width:100%;
+    padding: 40px 0px 0px 0px;
+}
+
+.full-width-inner-gallery h3{
+    font-size:25px;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.gallery-grid{
+    margin: 0 auto;
+}
+
+.gallery-wrapper{
+    width: 81%;
+    margin: 0 10%;
+}
+
+.gallery-inner-wrapper{
+    margin-bottom: 4vh;
+}
+.gallery-item{
+    margin: 0 3% 3% 0;
+    float: left;
+}
+
+.gallery-item img{
+    width:100%;
+}
+
+.owners-detail{
+    font-size:25px;
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    margin-bottom: 20px;
+    width: 100%;   
+    color: white;
+}

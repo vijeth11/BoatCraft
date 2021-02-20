@@ -60,10 +60,57 @@
               [name]="item.name"
               [berth]="item.berth"
               ></app-card>              
-          </div>
-          </ng-container>
-          
+            </div>
+          </ng-container>          
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="full-width-message-wrapper">
+      <div  style="margin: 0 10%; width: 80%">
+        <div class="full-width-inner">
+          <h3>
+            Our huge selection of yachts and locations around the world allow you to have precisely the type of sailing experience you wish
+          </h3>
+          <div class="row" style="margin: 30px auto 0 auto">
+            <div class="col-md-6">
+              <a class="button0">View Yachts</a>
+            </div>
+            <div class="col-md-6">
+              <a class="button0" style="float:left">Get in Touch</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 full-width-inner-gallery">
+    <h3>Photo Gallery</h3>
+    <div class="title-block5" style="width: 6vw; margin-left: 47%;"></div>
+    <div class="gallery-wrapper">
+      <div class="row gallery-inner-wrapper" *ngFor ="let pictures of gallery">
+        <div class="col-md-3" *ngFor="let picture of pictures">
+          <div class="gallery-item">
+            <a href="" data-gal="prettyPhoto[gallery-1]" title="image7">
+              <img src="./assets/small-yatch.jpeg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="full-width-message-wrapper">
+      <div  style="margin: 0 10%; width: 80%">
+        <h3 class="owners-detail">Owners</h3>
+        <div class="title-block5"></div>
       </div>
     </div>
   </div>

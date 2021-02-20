@@ -14,33 +14,20 @@ export class HomeComponent implements OnInit {
     { src: "./assets/home/boat-craft-2-bc-65-scaled.jpg" },
     { src: "./assets/home/boat-craft-3-bc-65-scaled.jpg" }
   ];
-  public cards = [
-    {
-      "name": "Super",
-      "price": "50,000",
-      "berth": "20",
-      "title": "Super-yatch"
-    },
-    {
-      "name": "Super",
-      "price": "50,000",
-      "berth": "20",
-      "title": "Super-yatch"
-    },
-    {
-      "name": "Super",
-      "price": "50,000",
-      "berth": "20",
-      "title": "Super-yatch"
-    },
-    {
-      "name": "Super",
-      "price": "50,000",
-      "berth": "20",
-      "title": "Super-yatch"
+  public cards = [];
+  public gallery = [];
+  constructor() {
+    for(let i = 0; i < 4; i++){
+      this.cards.push({
+        "name": "Super",
+        "price": "50,000",
+        "berth": "20",
+        "title": "Super-yatch"
+      });
     }
-  ]
-  constructor() { }
+    this.gallery = new Array(Array(8).fill(1).length / 4).fill(1).map(_ => Array(8).fill(2).splice(0,4));
+    console.log(this.gallery);
+   }
 
   ngOnInit() {
   }

@@ -211,18 +211,12 @@
     font-family: Georgia;
     font-size: 160px;
     font-style: normal;
-    position: absolute;
-    top: 16%;
-    left: 13%;
 }
 
 .about-owner-close-qoute{
     font-family: Georgia;
     font-size: 160px;
-    font-style: normal;
-    position: absolute;
-    bottom: 18vh;
-    right: 85vh;
+    font-style: normal;    
 }
 
 .about-owner-innerwrapper p {
@@ -232,6 +226,7 @@
     text-align: center;
     width: 88%;
     margin: 0 auto;
+    align-self: flex-end;
 }
 
 .about-owner-image{

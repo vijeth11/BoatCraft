@@ -126,9 +126,13 @@
 .full-width-message-wrapper{
     width:100%;
     padding: 80px 0px;
-    background-image: url("/assets/home/boat-craft-2-bc-65-scaled.jpg");
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/assets/home/boat-craft-2-bc-65-scaled.jpg");
     background-size: 100% 153%;
     background-repeat: no-repeat;
+}
+
+.full-width-message-wrapper::after{
+    opacity: 0.3;
 }
 
 .full-width-inner{
@@ -192,4 +196,57 @@
     margin-bottom: 20px;
     width: 100%;   
     color: white;
+}
+
+.about-owner{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.about-owner-innerwrapper{
+    margin: 22px 0 0 0;
+}
+
+.about-owner-open-qoute{
+    font-family: Georgia;
+    font-size: 160px;
+    font-style: normal;
+    position: absolute;
+    top: 16%;
+    left: 13%;
+}
+
+.about-owner-close-qoute{
+    font-family: Georgia;
+    font-size: 160px;
+    font-style: normal;
+    position: absolute;
+    bottom: 18vh;
+    right: 85vh;
+}
+
+.about-owner-innerwrapper p {
+    font-size: 18px;
+    position: relative;
+    line-height: 160%;
+    text-align: center;
+    width: 88%;
+    margin: 0 auto;
+}
+
+.about-owner-image{
+    width: 80px;
+    height: 80px;
+    margin: 20px auto;
+    background: transparent;
+}
+
+.about-owner-image img {
+    border-radius: 100%;
+}
+
+.about-owner-author{
+    position: relative;
+    width: 85%;
+    margin: 0 auto;
 }

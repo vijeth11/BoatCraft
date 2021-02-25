@@ -1,17 +1,53 @@
 <footer class="footer">
   <div class="footer-inner">
-    <div class="row">
+    <div class="row footer-inner-wrapper">
       <div class="col-md-3">
-
+          <h5>About Us</h5>
+          <div class="title-block"></div>
+          <div class="textwidget">
+            <p>Donec imperdiet ullamcorper massa id suscipit. Sed vulputate ut turpis quis maximus. Vestibulum sed sollicitudin.</p>
+            <p>Maecenas at luctus arcu sed rhoncus nibh curabitur cursus vel quam sed pellentesque vestibulum eu eros et urna.</p>
+          </div>
       </div>
       <div class="col-md-3">
-        
+          <h5>Our Company</h5>
+          <div class="title-block"></div>
+          <div class="textwidget">
+            <ul class="options">
+              <li *ngFor="let item of listData"><div [style.top]="item.style"></div>{{item.name}}</li>              
+            </ul>
+          </div>
       </div>
       <div class="col-md-3">
-        
+        <h5>Contact Details</h5>
+        <div class="title-block"></div>
+        <div class="textwidget">
+          <ul class="contact-widget">
+            <li>
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+              1 Saint Road Street, The Boat Yard Building, Goa India
+            </li>
+            <li>
+              <i class="fa fa-phone" aria-hidden="true"></i>
+              71239090091
+              <span>Mon - Fri, 9.00am until 6.30pm</span>
+            </li>
+            <li>
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+              booking@test.com
+              <span>We reply within 24 hrs</span>
+            </li>
+          </ul>
+        </div>
       </div>
       <div class="col-md-3">
-        
+        <h5>Career</h5>
+        <div class="title-block"></div>
+        <div class="textwidget">
+          <ul class="options">
+            <li *ngFor="let item of careerData"><div [style.top]="item.style"></div>{{item.name}}</li>              
+          </ul>
+        </div>
       </div>
     </div>
   </div>

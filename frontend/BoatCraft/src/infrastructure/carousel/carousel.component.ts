@@ -22,7 +22,8 @@ export class CarouselComponent implements OnInit, AfterContentInit {
   @Input() displayCaption:boolean = false;
   @Input() title:string;
   @Input() discription:string;
-
+  @Input() aboutUrl= "";
+  
   private currentSlide:number = 0;
   private previouSlide: number = 0;
   constructor() { }

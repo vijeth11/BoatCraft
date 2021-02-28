@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { InfrastructureModule } from '../infrastructure/infrastructure.module';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +22,8 @@ import { ContactComponent } from './contact/contact.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    InfrastructureModule
+    InfrastructureModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

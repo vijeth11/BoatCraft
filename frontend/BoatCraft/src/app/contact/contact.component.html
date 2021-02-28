@@ -15,3 +15,67 @@
     </p>
   </div>
 </div>
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-md-6 col-sm-6">
+      <div class="inner-wrapper">
+        <h4>Get In Touch</h4>
+        <div class="title-block5"></div>
+        <div class="text-wrapper">
+          <p>
+            Duis commodo ipsum quis ante venenatis rhoncus. Vivamus imperdiet 
+            felis ac facilisis hendrerit. Nulla eu elementum ex, ut pulvinar 
+            est. Nam aliquet et tortor sed aliquet. Pellentesque habitant morbi 
+            tristique senectus et netus et malesuada fames ac turpis egestas. 
+            Integer sit amet aliquet leo. Sed aliquam ex
+          </p>
+        </div>
+        <h4>Contact Details</h4>
+        <div class="title-block5"></div>
+        <div class = "inner-widget">
+          <ul class="contact-widget">
+            <li>
+              <div>
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+              </div>
+              <span>1 Saint Road Street, The Boat Yard Building, Goa India</span>
+            </li>
+            <li>
+              <div style="padding:15px 19px">
+                <i class="fa fa-clock-o" aria-hidden="true"></i>
+              </div>
+              <span>Mon - Fri, 9.00am until 6.30pm</span>
+            </li>
+            <li>
+              <div style="padding:15px 20px">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <span>71239090091</span>
+            </li>
+            <li>
+              <div style="padding:15px 17px">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <span>booking@test.com</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-sm-6">
+        <div class="contact-form">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <label>Name <span>*</span></label>
+            <input type="text" name="your-name" formControlName="name"/>
+            <label>Email <span>*</span></label>
+            <input type="email" name="your-email" formControlName="email"/>
+            <label>Subject</label>
+            <input type="text" name="subject" formControlName="subject"/>
+            <label>Message <span>*</span></label>
+            <textarea type="text" name="message" formControlName="message"></textarea>
+            <input type="submit" class="submit" [disabled]="!contactForm.valid" value="Submit"/>
+          </form>
+        </div>
+    </div>
+  </div>
+</div>

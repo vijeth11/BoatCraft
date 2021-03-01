@@ -28,3 +28,52 @@
 .page-header p i {
     margin: 0 5px;
 }
+
+
+.content-wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.inner-wrapper{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.inner-wrapper h4 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.title-block5 {
+    width: 45px;
+    height: 2px;
+    margin: 0 0 25px 0;
+    background: #85a5cc;
+}
+
+.text-wrapper{
+    margin-bottom: 35px;
+}
+
+p{
+    line-height: 160%;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+}
+
+.gallery-inner-wrapper{
+    margin-bottom: 4vh;
+}
+
+.gallery-item{
+    margin: 0 3% 3% 0;
+    float: left;
+}
+
+.gallery-item img{
+    width:100%;
+}

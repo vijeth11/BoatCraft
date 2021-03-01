@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
+  public gallery = [];
+  constructor() {
+    this.gallery = new Array(Array(6).fill(1).length / 3).fill(1).map(_ => Array(6).fill(2).splice(0,3));
+    console.log(this.gallery);
+   }
 
   ngOnInit() {
   }

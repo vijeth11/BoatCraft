@@ -13,7 +13,9 @@ export class ContactComponent implements OnInit {
     subject: new FormControl(''),
     message: new FormControl('')
   });
-  constructor() { }
+  constructor() {
+    window.scrollTo(0, 0);
+   }
 
   ngOnInit() {
   }

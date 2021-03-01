@@ -24,13 +24,13 @@
   <div class="page-buttons">
     <div class="row">
       <div class="col-sm-6">
-        <a class="photo">
+        <a class="photo" (click)="reRoute('photo')">
           <i class="fa fa-picture-o"></i>
           Photos
         </a>
       </div>
       <div class="col-sm-6">
-        <a class="about" [href]="aboutUrl">
+        <a class="about" (click)="reRoute('about')">
           <i class="fa fa-info-circle"></i>
           About
         </a>

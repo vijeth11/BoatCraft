@@ -3,10 +3,11 @@
     <app-carousel 
     [displayCaption]="true"
     [title]="title"
-    [discription]="discription">
+    [discription]="discription"
+    (changeUrl)="changeTheRoute($event)">
       <ng-container *ngFor="let slide of slides;">
         <img appCarouselSlide
-        [src]="slide.src"
+        [src]="slide.src"        
         />
       </ng-container>
     </app-carousel>

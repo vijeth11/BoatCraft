@@ -1,5 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { AfterContentInit, ContentChildren, QueryList} from '@angular/core';
 import { CarouselSlideDirective } from '../carousel-slide/carousel-slide.directive';
 
@@ -22,7 +22,7 @@ export class CarouselComponent implements OnInit, AfterContentInit {
   @Input() displayCaption:boolean = false;
   @Input() title:string;
   @Input() discription:string;
-  @Input() aboutUrl= "";
+  @Output() changeUrl:EventEmitter<string>= new EventEmitter<string>();
   
   private currentSlide:number = 0;
   private previouSlide: number = 0;
@@ -72,5 +72,9 @@ export class CarouselComponent implements OnInit, AfterContentInit {
         this.displayCaption=true;
       },0);
     }
+  }
+
+  reRoute(routeData:string){
+    this.changeUrl.emit(routeData);
   }
 }

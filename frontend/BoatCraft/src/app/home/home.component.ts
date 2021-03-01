@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -16,7 +17,7 @@ export class HomeComponent implements OnInit {
   ];
   public cards = [];
   public gallery = [];
-  constructor() {
+  constructor(private router:Router) {
     for(let i = 0; i < 4; i++){
       this.cards.push({
         "name": "Super",
@@ -29,6 +30,9 @@ export class HomeComponent implements OnInit {
     console.log(this.gallery);
    }
 
+   changeTheRoute(data:string){
+      this.router.navigate([data]);
+   }
   ngOnInit() {
   }
 

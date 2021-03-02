@@ -10,6 +10,7 @@ export class GalleryComponent implements OnInit {
 
   public title:string = 'Photos';
   public pathMap:string[] = ['Home', this.title];
+  public gallery:string[] = new Array(15).fill("./assets/small-yatch.jpeg");
 
   constructor(private router: Router) { }
 

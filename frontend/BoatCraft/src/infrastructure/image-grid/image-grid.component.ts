@@ -14,7 +14,13 @@ export class ImageGridComponent{
     @Input() columns:number;
     @Input() set images(values){
         this._images = values;
-        this.gallery = new Array(this._images.length / this.columns).fill(1).map(_ => Array(this._images.length).fill(2).splice(0,this.columns));
+        if(this._images.length % this.columns == 0){
+            this.gallery = new Array(this._images.length / this.columns).fill(1).map(_ => Array(this._images.length).fill(2).splice(0,this.columns));
+        }else{
+            let module_param = this._images.length % this.columns;
+            this.gallery = new Array((this._images.length - module_param) / this.columns).fill(1).map(_ => Array(this._images.length-module_param).fill(2).splice(0,this.columns));
+            this.gallery.push(new Array(module_param).fill(2));
+        }
     };
     get images() {
         return this. _images;

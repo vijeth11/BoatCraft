@@ -11,6 +11,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { GalleryComponent } from './gallery/gallery.component';
+import { DesignsComponent } from './designs/designs.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { GalleryComponent } from './gallery/gallery.component';
     AboutComponent,
     ContactComponent,
     GalleryComponent,
+    DesignsComponent,
   ],
   imports: [
     BrowserModule,

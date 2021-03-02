@@ -1,0 +1,19 @@
+<div>
+    <div class="page-header">
+      <h1>{{ title }}</h1>
+      <div class="title-block"></div>
+      <p>
+        <ng-container *ngFor="let item of pathMap.slice(0,pathMap.length-1)">
+            <span>
+                <a style="text-decoration: none;color:black;" (click)="onPathClick(item)">
+                  <span>{{ item }}</span>
+                </a>
+              </span> 
+              <span class="sep">
+                <i class="fa fa-angle-right"></i>
+              </span> 
+        </ng-container>        
+        <span class="current">{{ title }}</span>
+      </p>
+    </div>
+  </div>

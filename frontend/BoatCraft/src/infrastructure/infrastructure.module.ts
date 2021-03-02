@@ -1,3 +1,5 @@
+import { PageHeaderComponent } from './page-header/page-header.component';
+import { ImageGridComponent } from './image-grid/image-grid.component';
 import { CardComponent } from './Card/card.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,7 +11,9 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
   declarations: [
     CarouselComponent, 
     CarouselSlideDirective,
-    CardComponent
+    CardComponent,
+    ImageGridComponent,
+    PageHeaderComponent,
   ],
   imports: [
     CommonModule,
@@ -18,7 +22,9 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
   exports:[ 
     CarouselComponent, 
     CarouselSlideDirective,
-    CardComponent
+    CardComponent,
+    ImageGridComponent,
+    PageHeaderComponent,
   ]
 })
 export class InfrastructureModule { }

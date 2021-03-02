@@ -1,20 +1,7 @@
-<div>
-  <div class="page-header">
-    <h1>Contact Us</h1>
-    <div class="title-block"></div>
-    <p>
-      <span>
-        <a [routerLink]="['/home']"  style="text-decoration: none;color:black;">
-          <span>Home</span>
-        </a>
-      </span> 
-      <span class="sep">
-        <i class="fa fa-angle-right"></i>
-      </span> 
-      <span class="current">Contact Us</span>
-    </p>
-  </div>
-</div>
+<page-header
+[title]="title"
+[pathMap]="pathMap"
+(pathSelected)="changeTheRoute($event)"></page-header>
 <div class="content-wrapper">
   <div class="row">
     <div class="col-md-6 col-sm-6">

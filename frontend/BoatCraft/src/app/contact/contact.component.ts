@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl } from '@angular/forms';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-contact',
   templateUrl: './contact.component.html',
@@ -13,7 +14,10 @@ export class ContactComponent implements OnInit {
     subject: new FormControl(''),
     message: new FormControl('')
   });
-  constructor() {
+  public title:string = 'Contact Us';
+  public pathMap:string[] = ['Home', this.title];
+
+  constructor(private router:Router) {
     window.scrollTo(0, 0);
    }
 
@@ -23,4 +27,8 @@ export class ContactComponent implements OnInit {
   onSubmit(){
     console.log(this.contactForm);
   }
+
+  changeTheRoute(data:string){
+    this.router.navigate([data]);
+ }
 }

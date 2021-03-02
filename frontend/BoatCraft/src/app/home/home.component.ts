@@ -26,7 +26,7 @@ export class HomeComponent implements OnInit {
         "title": "Super-yatch"
       });
     }
-    this.gallery = new Array(Array(8).fill(1).length / 4).fill(1).map(_ => Array(8).fill(2).splice(0,4));
+    this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
    }
 

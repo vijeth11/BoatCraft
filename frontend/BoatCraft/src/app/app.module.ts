@@ -10,6 +10,7 @@ import { InfrastructureModule } from '../infrastructure/infrastructure.module';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { GalleryComponent } from './gallery/gallery.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,6 +19,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     HomeComponent,
     AboutComponent,
     ContactComponent,
+    GalleryComponent,
   ],
   imports: [
     BrowserModule,

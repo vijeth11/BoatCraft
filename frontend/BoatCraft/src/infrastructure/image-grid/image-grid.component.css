@@ -1,0 +1,12 @@
+.gallery-inner-wrapper{
+    margin-bottom: 4vh;
+}
+
+.gallery-item{
+    margin: 0 3% 3% 0;
+    float: left;
+}
+
+.gallery-item img{
+    width:100%;
+}

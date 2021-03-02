@@ -1,0 +1,10 @@
+<div class="row gallery-inner-wrapper" *ngFor ="let pictures of gallery; let i = index">
+    <div [ngClass]="{'col-md-4 col-sm-4': columns == 3, 'col-sm-3 col-md-3': columns == 4, 'col-sm-2 col-md-2': columns == 6}"
+     *ngFor="let picture of pictures; let j = index">
+      <div class="gallery-item">
+        <a href="">
+          <img [src]="getImageUrl(i,j)" alt="">
+        </a>
+      </div>
+    </div>
+</div>

@@ -1,3 +1,4 @@
+import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -8,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   public gallery = [];
-  constructor() {
+  public title:string = 'About Us';
+  public pathMap:string[] = ['Home', this.title];
+
+  constructor(private router: Router) {
     window.scrollTo(0, 0);
-    this.gallery = new Array(Array(6).fill(1).length / 3).fill(1).map(_ => Array(6).fill(2).splice(0,3));
+    this.gallery = new Array(6).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
    }
 
   ngOnInit() {
   }
 
+  changeTheRoute(data:string){
+    this.router.navigate([data]);
+ }
 }

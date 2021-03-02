@@ -94,15 +94,9 @@
     <h3>Photo Gallery</h3>
     <div class="title-block5" style="width: 6vw; margin-left: 47%;"></div>
     <div class="gallery-wrapper">
-      <div class="row gallery-inner-wrapper" *ngFor ="let pictures of gallery">
-        <div class="col-md-3 col-sm-3" *ngFor="let picture of pictures">
-          <div class="gallery-item">
-            <a href="" data-gal="prettyPhoto[gallery-1]" title="image7">
-              <img src="./assets/small-yatch.jpeg" alt="">
-            </a>
-          </div>
-        </div>
-      </div>  
+      <image-grid
+      [columns]="4"
+      [images]="gallery"></image-grid>   
     </div>
   </div>
 </div>

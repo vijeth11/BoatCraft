@@ -177,18 +177,6 @@
     margin: 0 10%;
 }
 
-.gallery-inner-wrapper{
-    margin-bottom: 4vh;
-}
-.gallery-item{
-    margin: 0 3% 3% 0;
-    float: left;
-}
-
-.gallery-item img{
-    width:100%;
-}
-
 .owners-detail{
     font-size:25px;
     text-align: center;

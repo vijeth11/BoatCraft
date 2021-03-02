@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  listNames:string[] = ["Service","Yatch","Designs","tests","test2"]
+  listNames:string[] = ["Service","Designs","Gallery","test2"]
   careerNames:string[] = ["Sailor","Chef", "Boat Engineer"]
   listData:any[] = [];
   careerData:any[] = [];

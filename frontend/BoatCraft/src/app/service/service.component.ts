@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-service',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ServiceComponent implements OnInit {
 
-  constructor() { }
+  public title:string = 'Services';
+  public pathMap:string[] = ['Home', this.title];
+
+  constructor(private router: Router) {
+    window.scrollTo(0, 0); 
+  }
 
   ngOnInit() {
   }
-
+  
+  changeTheRoute(data:string){
+    this.router.navigate([data]);
+  }
 }

@@ -1,0 +1,52 @@
+.content-wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.inner-wrapper{
+    box-sizing: border-box;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+}
+
+.inner-wrapper h4 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.title-block5 {
+    width: 45px;
+    height: 2px;
+    margin: 0 0 25px 0;
+    background: #85a5cc;
+}
+
+.image-wrapper{
+    position: relative;
+    box-sizing: border-box;
+    padding-left: 159.5px;
+    padding-right: 159.5px;
+    background-image: url(http://yacht-rental.themerex.net/wp-content/uploads/2016/08/38804571.jpg?id=672) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 350px;
+    margin: 60px 0 50px 0;
+}
+
+.image-inner-wrapper{
+    color: #fff !important;
+    border-color: #fff !important;
+    margin-bottom: 96px !important;
+    margin-top: 96px !important;
+}
+
+.image-inner-wrapper h1{
+    text-align: center;
+    font-weight: 700;
+    font-size: 4.286em;
+    color: #fff !important;
+    border-color: #fff !important;
+}

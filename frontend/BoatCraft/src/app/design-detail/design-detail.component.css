@@ -1,0 +1,162 @@
+.content-wrapper{
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.main-content {
+    float: left;
+    width: 100%;
+    padding: 0 40px 0 15px;
+    border-right: #e8e8e8 1px solid;
+    margin: 0 0 60px 0;
+}
+
+.carousal{
+    max-height: 500px;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    height: 500px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.sidebar-content {
+    float: right;
+    width: 100%;
+}
+
+.col-sm-3 .col-md-3{
+    padding-left: 0;
+    padding-right: 0;
+}
+.widget{
+    margin: 0 0 60px 0;
+}
+
+.content-wrapper .widget h3 {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+.title-block3 {
+    width: 45px;
+    height: 2px;
+    margin: 0 0 25px 0;
+    background: #85a5cc;
+}
+
+.yatch-sale{
+    background: #1a1f2b;
+}
+
+.yatch-sale h3{
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    margin: 0 0 30px 0;
+    border-top: #2f3545 1px solid;
+    border-bottom: #2f3545 1px solid;
+}
+
+.yatch-sale h3 span{
+    border-top: #2f3545 1px solid;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    display: block;
+    padding: 20px 0 0 0;
+    margin: 20px 0 0 0;
+}
+
+.yatch-sale button{
+    float: none;
+    font-size: 14px;
+    padding: 12px 20px;
+    margin:10px 28% 20px 28%;
+    cursor: pointer;
+    background-color: #85a5cc;
+    color: white;
+}
+
+
+.contact-widget{
+    list-style: none;
+    padding: 0 0;
+}
+
+.contact-widget li {
+    border-bottom: #e8e8e8 1px solid;
+    padding: 21px 0 21px 0px;
+    position: relative;
+    display: flex;
+    flex-flow: row;
+}
+
+.contact-widget div {
+    padding: 15px 22px;
+    background: #85a5cc;
+    border-radius: 100px;
+}
+
+.contact-widget i {
+    font-size: 20px;
+    color: white;
+}
+
+.contact-widget span{
+    align-self: center;
+    padding-left: 15px;
+    font-size: 15px;
+}
+
+.details h3{
+    font-size: 30px;
+    margin: 0 0 30px 0;
+    font-weight: 400;
+}
+
+.inner-content{
+    margin-bottom: 35px;
+}
+
+.inner-content p{
+    line-height: 160%;
+    font-size: 16px;
+    margin: 0 0 30px 0;
+}
+
+.yacht-specs {
+    border-top: #e8e8e8 1px solid !important
+}
+
+.yacht-specs h3{
+    font-size: 20px;
+    font-family: 'Source Serif Pro', serif;
+    color: #666;
+    padding: 30px 0 30px 0 !important;
+}
+
+.yatch-sale table{
+    width: 100%;
+    margin: 0 0 40px 0;
+    font-size: 16px;
+    color: #424242;
+}
+
+.yacht-specs table tr{
+    background: #fff;
+}
+
+.yacht-specs table tr:nth-child(2n){
+    background: #f8f8f8;
+}
+
+.yacht-specs table td{
+    padding: 9px 20px;
+    line-height: 160%;
+    border-right: #e9e9e9 1px solid;
+    border-bottom: #e9e9e9 1px solid;
+    text-align: left;
+    vertical-align: top;
+}

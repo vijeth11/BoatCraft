@@ -1,0 +1,93 @@
+
+<page-header
+[title]="title"
+[pathMap]="path"
+(pathSelected)="changeTheRoute($event)"></page-header>
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-sm-9 col-md-9">
+      <div class="main-content">
+        <div class="carousal">
+          <app-carousel 
+          [displayCaption]="false"
+          [title]="title"
+          (changeUrl)="changeTheRoute($event)">
+            <ng-container *ngFor="let slide of getSlides();">
+              <img appCarouselSlide
+                [src]="slide.src"        
+              />
+            </ng-container>
+          </app-carousel>
+        </div>
+        <div class="details">
+          <h3>Yacht Details</h3>
+          <div class="title-block3"></div>
+          <div class="inner-content">
+            <p>
+              {{ card.description1 }}
+            </p>
+            <p>
+              {{ card.description2 }}
+            </p>
+          </div>
+        </div> 
+        <div class="yacht-specs">
+          <h3>Yacht Specs</h3>
+          <div>
+            <table>
+              <tbody>
+                <tr *ngFor = "let spec of cardSpecs; let i = index">
+                  <td *ngFor = "let k of spec; let j = index">
+                    {{ getPropertyName(card["specs"],i,j) }} : {{ getPropertyValue(card["specs"],i,j) }}
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>                 
+      </div>
+    </div>
+    <div class="col-sm-3 col-md-3">
+        <div class="sidebar-content">
+          <div class="widget">
+            <h3>Build The Yatch</h3>
+            <div class="title-block3"></div>
+            <div class="yatch-sale">
+              <h3>${{card.price}} <span>Per Week</span></h3>
+              <button>Build Now</button>
+            </div>
+          </div>
+          <div class="widget">
+            <h3>Contact Us</h3>
+            <div class="title-block3"></div>
+            <ul class="contact-widget">
+              <li>
+                <div>
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <span>1 Saint Road Street, The Boat Yard Building, Goa India</span>
+              </li>
+              <li>
+                <div style="padding:15px 19px">
+                  <i class="fa fa-clock-o" aria-hidden="true"></i>
+                </div>
+                <span>Mon - Fri, 9.00am until 6.30pm</span>
+              </li>
+              <li>
+                <div style="padding:15px 20px">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                </div>
+                <span>71239090091</span>
+              </li>
+              <li>
+                <div style="padding:15px 17px">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                </div>
+                <span>booking@test.com</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

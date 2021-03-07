@@ -257,10 +257,10 @@ MIT
 @angular/router
 MIT
 
-@angular/forms
+@angular/animations
 MIT
 
-@angular/animations
+@angular/forms
 MIT
 
 zone.js

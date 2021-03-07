@@ -5,7 +5,7 @@
     [title]="title"
     [discription]="discription"
     (changeUrl)="changeTheRoute($event)">
-      <ng-container *ngFor="let slide of slides;">
+      <ng-container *ngFor="let slide of getSlides();">
         <img appCarouselSlide
         [src]="slide.src"        
         />
@@ -55,11 +55,12 @@
           </p>
           <ng-container>
             <div class="row">
-              <app-card *ngFor="let item of cards"
+              <app-card *ngFor="let item of getCards()"
               [title]="item.title"
               [price]="item.price"
               [name]="item.name"
               [berth]="item.berth"
+              displayDefaultContent="true"
               ></app-card>              
             </div>
           </ng-container>          

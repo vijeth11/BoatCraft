@@ -5,9 +5,9 @@
             <img src="http://themes.quitenicestuff2.com/yachtcharterwp/wp-content/uploads/2016/10/image22-500x370.jpg" alt="">							
         </a>
         </div>
-        <div class="yatch-block-content">
+        <div class="yatch-block-content" *ngIf = "displayDefaultContent">
             <h3>
-            <a href="http://themes.quitenicestuff2.com/yachtcharterwp/yacht_charters/super-yacht-4/" rel="bookmark" [title]="title"> {{ title }}</a>
+            <a (click)="onReDirect()" rel="bookmark" [title]="title"> {{ title }}</a>
             </h3>
             <div class="title-block6"></div>
             <ul>
@@ -15,6 +15,10 @@
             <li><span>Berths:</span> {{ berth }}</li>
             <li><span>Price:</span> ${{ price}} / Week</li>
             </ul>
+            <p *ngIf="displayButton">
+                <button (click)="onReDirect()"> Build Now</button>
+            </p>
         </div>
+        <ng-content select="#content"></ng-content>
     </div>
 </div>

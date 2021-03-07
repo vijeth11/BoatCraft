@@ -1,3 +1,5 @@
+import { DesignDetailComponent } from './design-detail/design-detail.component';
+import { ServiceComponent } from './service/service.component';
 import { DesignsComponent } from './designs/designs.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactComponent } from './contact/contact.component';
@@ -7,7 +9,9 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
+  {path:"services", component: ServiceComponent},
   {path:"designs", component: DesignsComponent},
+  {path:"designs/:id", component: DesignDetailComponent},
   {path:"photos", component: GalleryComponent},
   {path:"contact", component:ContactComponent},
   {path:"about", component:AboutComponent},

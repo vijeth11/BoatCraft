@@ -1,3 +1,4 @@
+import { DataStoreService } from './../data-store.service';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 
@@ -17,15 +18,8 @@ export class HomeComponent implements OnInit {
   ];
   public cards = [];
   public gallery = [];
-  constructor(private router:Router) {
-    for(let i = 0; i < 4; i++){
-      this.cards.push({
-        "name": "Super",
-        "price": "50,000",
-        "berth": "20",
-        "title": "Super-yatch"
-      });
-    }
+  constructor(private router:Router, private dataService:DataStoreService) {
+    
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
    }
@@ -33,6 +27,15 @@ export class HomeComponent implements OnInit {
    changeTheRoute(data:string){
       this.router.navigate([data]);
    }
+
+   getCards(){
+     return this.dataService.getCardsforHome();
+   }
+
+   getSlides(){
+     return this.dataService.getSlideImages();
+   }
+
   ngOnInit() {
   }
 

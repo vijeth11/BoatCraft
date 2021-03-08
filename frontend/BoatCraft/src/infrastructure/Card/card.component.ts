@@ -15,6 +15,7 @@ export class CardComponent {
 @Input() id:number;
 @Input() displayDefaultContent:boolean = true;
 @Input() displayButton:boolean = false;
+@Input() width:number = 240;
 @Output() reDirect: EventEmitter<number> = new EventEmitter<number>()
 
 onReDirect(){

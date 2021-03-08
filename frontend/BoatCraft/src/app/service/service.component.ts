@@ -21,4 +21,8 @@ export class ServiceComponent implements OnInit {
   changeTheRoute(data:string){
     this.router.navigate([data]);
   }
+
+  redirect(data:string){
+    
+  }
 }

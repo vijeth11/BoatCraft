@@ -30,7 +30,65 @@
     <div class="col-sm-12 col-md-12">
       <div class="image-inner-wrapper">
         <h1>Fun and Adventure Awaits</h1>
+        <a>ENQUIRE Now</a>
       </div>
+    </div>
+  </div>
+</div>
+<div class="content-wrapper">
+  <div class="row">
+    <div class="col-sm-12 col-md-12">
+      <div class="inner-header">
+        <h1>Our Services</h1>
+        <div class="title-block3"></div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-bottom: 60px;">
+    <div class="col-sm-4 col-md-4">
+      <app-card    
+        [displayDefaultContent]="false" 
+        [width] = "300"          
+        (reDirect)="redirect($event)"
+      >
+      <div id="content" class="content">
+        <h4>Boat Rentals</h4>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+          <a class="card-button">Learn More</a>
+        </div>
+      </div>
+    </app-card>  
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <app-card 
+        [displayDefaultContent]="false"
+        [width] = "300"             
+        (reDirect)="redirect($event)"
+      >
+      <div id="content" class="content">
+        <h4>Yachts</h4>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+          <a class="card-button">Learn More</a>
+        </div>
+      </div>
+    </app-card>  
+    </div>
+    <div class="col-sm-4 col-md-4">
+      <app-card 
+        [displayDefaultContent]="false"
+        [width] = "300"             
+        (reDirect)="redirect($event)"
+      >
+      <div id="content" class="content">
+        <h4>Amusment</h4>
+        <div class="discription">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
+          <a class="card-button">Learn More</a>
+        </div>
+      </div>
+    </app-card>  
     </div>
   </div>
 </div>

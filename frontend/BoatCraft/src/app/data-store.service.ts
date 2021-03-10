@@ -124,7 +124,7 @@ export class DataStoreService {
         ]
       },
       {
-        "id": "BC30",
+        "id": "BC30Parcil",
         "name": "PARASAIL",
         "price": "10,000",
         "length": "9.35 Mtrs",
@@ -179,7 +179,7 @@ export class DataStoreService {
         ]
       },
       {
-        "id": "BC20",
+        "id": "BC20Parcil",
         "name": "SEA Quest",
         "price": "10,000",
         "length": "6.00 Mtrs",

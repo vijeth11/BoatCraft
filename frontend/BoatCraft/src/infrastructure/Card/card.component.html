@@ -1,8 +1,8 @@
 <div class="col-md-3 col-sm-3">
     <div class="Yatch-card" [ngStyle]="{'width.px': width}">
         <div class="Yatch-image">
-        <a href="http://themes.quitenicestuff2.com/yachtcharterwp/yacht_charters/super-yacht-4/" rel="bookmark" [title]="title">
-            <img src="http://themes.quitenicestuff2.com/yachtcharterwp/wp-content/uploads/2016/10/image22-500x370.jpg" alt="" [ngStyle]="{'width.px': width}">							
+        <a  (click)="onReDirect()" rel="bookmark" [title]="title">
+            <img [src]="images[0]" alt="" [ngStyle]="{'width.px': width}">							
         </a>
         </div>
         <div class="yatch-block-content" *ngIf = "displayDefaultContent">
@@ -11,9 +11,9 @@
             </h3>
             <div class="title-block6"></div>
             <ul>
-            <li><span>Base:</span> {{ name }}</li>
-            <li><span>Berths:</span> {{ berth }}</li>
-            <li><span>Price:</span> ${{ price}} / Week</li>
+            <li><span>Name:</span> {{ name }}</li>
+            <li><span>Length:</span> {{ length }}</li>
+            <li><span>Price:</span> ₹ {{ price}}</li>
             </ul>
             <p *ngIf="displayButton">
                 <button (click)="onReDirect()"> Build Now</button>

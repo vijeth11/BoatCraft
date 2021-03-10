@@ -31,4 +31,7 @@ export class DesignsComponent implements OnInit {
   getCards(){
     return this.dataService.getCardsData();
   }
+  getCardImages(item:any){
+    return this.dataService.getCardImages(item);
+  }
 }

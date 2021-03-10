@@ -35,9 +35,12 @@ export class HomeComponent implements OnInit {
    getSlides(){
      return this.dataService.getSlideImages();
    }
-
+   
   ngOnInit() {
   }
-
+  
+  getCardImages(item:any){
+    return this.dataService.getCardImages(item);
+  }
   
 }

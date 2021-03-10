@@ -12,9 +12,9 @@
           [displayCaption]="false"
           [title]="title"
           (changeUrl)="changeTheRoute($event)">
-            <ng-container *ngFor="let slide of getSlides();">
+            <ng-container *ngFor="let slide of imageSlides;">
               <img appCarouselSlide
-                [src]="slide.src"        
+                [src]="slide"        
               />
             </ng-container>
           </app-carousel>
@@ -53,7 +53,7 @@
             <h3>Build The Yatch</h3>
             <div class="title-block3"></div>
             <div class="yatch-sale">
-              <h3>${{card.price}} <span>Per Week</span></h3>
+              <h3>₹{{card.price}} <span>Per Week</span></h3>
               <button>Build Now</button>
             </div>
           </div>

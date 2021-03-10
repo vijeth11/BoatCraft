@@ -11,11 +11,12 @@ export class DesignDetailComponent implements OnInit {
 
   title:string = "";
   path:string[] = ["Home", "Designs"]
-  id:number = 0;
+  id:string = "";
   card:any;
   cardSpecs:any;
+  imageSlides:string[]=[];
   constructor(private route:ActivatedRoute, private dataService:DataStoreService, private router: Router) {
-    this.id = Number(this.route.snapshot.paramMap.get('id'));
+    this.id = this.route.snapshot.paramMap.get('id');
     this.card = this.dataService.getCardDetailById(this.id);
     if(this.card){
       this.title = "Super Yacht";
@@ -27,15 +28,12 @@ export class DesignDetailComponent implements OnInit {
         this.cardSpecs = new Array((this.card["specs"].length - module_param) / 4).fill(1).map(_ => Array(this.card["specs"].length-module_param).fill(2).splice(0,4));
         this.cardSpecs.push(new Array(module_param).fill(2));
       }    
+      this.imageSlides = this.dataService.getCardImages(this.card);
     }
     window.scrollTo(0, 0);
    }
 
   ngOnInit() {
-  }
-
-  getSlides(){
-    return this.dataService.getSlideImages();
   }
 
   changeTheRoute(data:string){

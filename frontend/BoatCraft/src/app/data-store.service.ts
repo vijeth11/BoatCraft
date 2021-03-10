@@ -273,7 +273,7 @@ export class DataStoreService {
         "baseImageUrl":"./assets/Boat-Images/BC36/",
         "gridImages":[
           "BC36 model.jpeg",
-          "BC36 Plan.jpeg",
+          "BC36 plan.jpeg",
           "BC36 image.jpeg",
           "BC36 image1.jpeg",
         ],

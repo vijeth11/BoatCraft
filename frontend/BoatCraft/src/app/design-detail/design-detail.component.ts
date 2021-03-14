@@ -19,7 +19,7 @@ export class DesignDetailComponent implements OnInit {
     this.id = this.route.snapshot.paramMap.get('id');
     this.card = this.dataService.getCardDetailById(this.id);
     if(this.card){
-      this.title = "Super Yacht";
+      this.title = this.card.title;
       this.path.push(this.title);
       if(this.card["specs"].length % 4 == 0){
         this.cardSpecs = new Array(this.card["specs"].length / 4).fill(1).map(_ => Array(this.card["specs"].length).fill(2).splice(0,4));

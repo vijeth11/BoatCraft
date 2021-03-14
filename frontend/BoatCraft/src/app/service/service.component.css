@@ -117,4 +117,9 @@
     letter-spacing: 1px;
     padding: 17px;
     text-decoration: none;
+    cursor: pointer;
+}
+
+.image-inner-wrapper a{
+    cursor: pointer;
 }

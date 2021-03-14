@@ -23,6 +23,6 @@ export class ServiceComponent implements OnInit {
   }
 
   redirect(data:string){
-    
+    this.router.navigate([data]);
   }
 }

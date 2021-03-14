@@ -5,8 +5,7 @@
           <h5>About Us</h5>
           <div class="title-block"></div>
           <div class="textwidget">
-            <p>Donec imperdiet ullamcorper massa id suscipit. Sed vulputate ut turpis quis maximus. Vestibulum sed sollicitudin.</p>
-            <p>Maecenas at luctus arcu sed rhoncus nibh curabitur cursus vel quam sed pellentesque vestibulum eu eros et urna.</p>
+            <p>{{ aboutPara }}</p>            
           </div>
       </div>
       <div class="col-md-3">
@@ -14,7 +13,7 @@
           <div class="title-block"></div>
           <div class="textwidget">
             <ul class="options">
-              <li *ngFor="let item of listData"><div [style.top]="item.style"></div>{{item.name}}</li>              
+              <li *ngFor="let item of listData" (click)="redirect(item.url)"><div [style.top]="item.style"></div>{{item.name}}</li>              
             </ul>
           </div>
       </div>
@@ -25,16 +24,19 @@
           <ul class="contact-widget">
             <li>
               <i class="fa fa-map-marker" aria-hidden="true"></i>
-              1 Saint Road Street, The Boat Yard Building, Goa India
+              Ap/1, Reliance Park, Colva Margo Road,
+              Per-seraulim, Colva, Salcete, Goa - 403 708
             </li>
             <li>
               <i class="fa fa-phone" aria-hidden="true"></i>
-              71239090091
+              +91 - 832-2789400/2789401
+              <br/>
               <span>Mon - Fri, 9.00am until 6.30pm</span>
             </li>
             <li>
               <i class="fa fa-envelope" aria-hidden="true"></i>
-              booking@test.com
+              John@boatcraft.in
+              <br/>
               <span>We reply within 24 hrs</span>
             </li>
           </ul>

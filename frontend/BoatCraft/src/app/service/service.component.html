@@ -9,12 +9,13 @@
       <div class="title-block5"></div>
       <div class="text-wrapper">
         <p>
-          Duis commodo ipsum quis ante venenatis rhoncus. Vivamus imperdiet felis 
-          ac facilisis hendrerit. Nulla eu elementum ex, ut pulvinar est. Nam aliquet 
-          et tortor sed aliquet. Pellentesque habitant morbi tristique senectus et 
-          netus et malesuada fames ac turpis egestas. Integer sit amet aliquet leo. 
-          Sed aliquam ex id turpis mattis, sit amet porta augue laoreet. Duis euismod 
-          feugiat consectetur.
+          Bring your boat or sailing yacht to us for the care and enhancements she needs.
+          Whether it’s an annual application of varnish or more extensive composite repairs, 
+          we will afford your boat the proper attention she deserves. Our repair and refit 
+          professionals work with high quality standards to breathe new life into any boat.
+          We have experts in mechanical systems, electrical repairs and electronic upgrades.
+          We understand that your boat is your pride and joy so we make sure to only use the
+          very highest quality materials in all of our work.
         </p>
       </div>
     </div>
@@ -49,13 +50,14 @@
       <app-card    
         [displayDefaultContent]="false" 
         [width] = "300"          
+        [images]="['http://yacht-rental.themerex.net/wp-content/uploads/2016/07/image-7-370x209.jpg']"
         (reDirect)="redirect($event)"
       >
       <div id="content" class="content">
         <h4>Boat Rentals</h4>
         <div class="discription">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          <a class="card-button">Learn More</a>
+          <p>Choose from a wide selection of boats and yachts, we have every type of boat available to meet your needs.</p>
+          <a class="card-button" (click)="redirect('designs')">Learn More</a>
         </div>
       </div>
     </app-card>  
@@ -64,13 +66,14 @@
       <app-card 
         [displayDefaultContent]="false"
         [width] = "300"             
+        [images]="['http://themes.quitenicestuff2.com/yachtcharterwp/wp-content/uploads/2016/10/image20-500x370.jpg']"        
         (reDirect)="redirect($event)"
       >
       <div id="content" class="content">
         <h4>Yachts</h4>
         <div class="discription">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          <a class="card-button">Learn More</a>
+          <p>Our huge selection of yachts allow you to have precisely the type of sailing experience you wish.</p>
+          <a class="card-button" (click)="redirect('photos')">Learn More</a>
         </div>
       </div>
     </app-card>  
@@ -78,14 +81,15 @@
     <div class="col-sm-4 col-md-4">
       <app-card 
         [displayDefaultContent]="false"
-        [width] = "300"             
+        [width] = "300"
+        [images]="['https://res.cloudinary.com/simplotel/image/upload/w_5000,h_2693/x_0,y_0,w_4793,h_2693,r_0,c_crop,q_80,fl_progressive/w_400,f_auto,c_fit/bangalore-park/RECOIL_c4reik']"             
         (reDirect)="redirect($event)"
       >
       <div id="content" class="content">
         <h4>Amusment</h4>
         <div class="discription">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut.</p>
-          <a class="card-button">Learn More</a>
+          <p>Amazing water and boat rides like Fishing on boat, snorkeling, Kayaking and many more attractive water sports.</p>
+          <a class="card-button" disabled style="opacity: 0.5;">Learn More</a>
         </div>
       </div>
     </app-card>  

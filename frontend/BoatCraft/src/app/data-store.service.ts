@@ -387,6 +387,12 @@ export class DataStoreService {
     return this.cards;
   }
 
+  public getAbout(){
+    let para1 = "We are the India's leading boat and yacht building company, we have a team of meticulous craftsmanship who are highly skilled and  carry rich experience in boat building. Our track record and portfolio are unchanged we envision to build business on strong pillars of long lasting customer relationships,trust and honesty by providing high quality service that is absolutely transparent and reliable.Our mission is to consistently perform with highest benchmarks and deliver world-class boats. In the world of boats and yacht, you could have no better qualified or trustworthy partner than BoatCraft.";
+    let para2 = "Every boat or yacht that we design are custom built reflecting our high quality standards , attention to minor details and our passion for building boats. We are one of india's prominent boat building company that have carved a niche for itself among technologically advanced and economically feasible boats.The boats are designed with a touch of glamor with correct balance between tradition and modernity. A state-of-the-art boatyard featuring modern infrastructure coupled with skilled manpower & rich experience of years helped us in exceeding the customer's expectations.";
+    return [para1,para2];
+  }
+
   public getCardsforHome(){
     return this.cards.slice(0,4);
   }

@@ -1,3 +1,4 @@
+import { DataStoreService } from './../data-store.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
@@ -11,12 +12,15 @@ export class AboutComponent implements OnInit {
   public gallery = [];
   public title:string = 'About Us';
   public pathMap:string[] = ['Home', this.title];
+  public aboutPara:string[] = [];
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private dataService:DataStoreService) {
     window.scrollTo(0, 0);
     this.gallery = new Array(6).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
+    this.aboutPara = this.dataService.getAbout();
    }
+
 
   ngOnInit() {
   }

@@ -12,7 +12,9 @@ export class GalleryComponent implements OnInit {
   public pathMap:string[] = ['Home', this.title];
   public gallery:string[] = new Array(15).fill("./assets/small-yatch.jpeg");
 
-  constructor(private router: Router) { }
+  constructor(private router: Router) { 
+    window.scrollTo(0, 0);
+  }
 
   ngOnInit() {
   }

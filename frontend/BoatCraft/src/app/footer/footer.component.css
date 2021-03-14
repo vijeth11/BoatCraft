@@ -62,4 +62,6 @@
     left: -32px;
   }
 
-  
+  .textwidget ul li{
+      cursor: pointer;
+  }

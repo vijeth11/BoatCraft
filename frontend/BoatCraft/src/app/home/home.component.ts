@@ -18,10 +18,12 @@ export class HomeComponent implements OnInit {
   ];
   public cards = [];
   public gallery = [];
+  public aboutPara:string="";
   constructor(private router:Router, private dataService:DataStoreService) {
     
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
+    this.aboutPara = this.dataService.getAbout()[0];
    }
 
    changeTheRoute(data:string){

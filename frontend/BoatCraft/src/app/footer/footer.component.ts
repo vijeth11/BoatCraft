@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { DataStoreService } from '../data-store.service';
 
 @Component({
   selector: 'app-footer',
@@ -7,15 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  listNames:string[] = ["Service","Designs","Gallery","test2"]
+  listNames:string[] = ["Services","Designs","Photos","test2"]
   careerNames:string[] = ["Sailor","Chef", "Boat Engineer"]
   listData:any[] = [];
   careerData:any[] = [];
-  constructor() { 
+  aboutPara:string=""
+  constructor(private dataService:DataStoreService,private router:Router) { 
+    this.aboutPara = this.dataService.getAbout()[0].substr(0,320)+"...";
     for(let i=0; i< this.listNames.length;i++) {
         this.listData.push({
           'name':this.listNames[i],
-          'style':"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)"
+          'style':"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)",
+          'url': this.listNames[i].toLowerCase()
         });
     }
     for(let i=0; i< this.careerNames.length;i++) {
@@ -29,4 +34,7 @@ export class FooterComponent implements OnInit {
   ngOnInit() {
   }
 
+  redirect(url:string){
+    this.router.navigate([url]);
+  }
 }

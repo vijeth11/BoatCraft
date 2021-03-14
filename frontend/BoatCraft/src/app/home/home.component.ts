@@ -45,4 +45,7 @@ export class HomeComponent implements OnInit {
     return this.dataService.getCardImages(item);
   }
   
+  redirectCard(id:string){
+    this.router.navigate(['designs',id]);
+  }
 }

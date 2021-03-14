@@ -54,12 +54,14 @@
           <ng-container>
             <div class="row">
               <app-card *ngFor="let item of getCards()"
+              [id]="item.id"
               [title]="item.title"
               [price]="item.price"
               [name]="item.name"
               [length]="item.length"
               [images]="getCardImages(item)"
               displayDefaultContent="true"
+              (reDirect)="redirectCard($event)"
               ></app-card>              
             </div>
           </ng-container>          

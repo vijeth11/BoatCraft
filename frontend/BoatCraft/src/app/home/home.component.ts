@@ -48,4 +48,8 @@ export class HomeComponent implements OnInit {
   redirectCard(id:string){
     this.router.navigate(['designs',id]);
   }
+
+  getPhotos(){
+    return this.dataService.getPhotosForHome()
+  }
 }

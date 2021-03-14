@@ -11,6 +11,7 @@ export class DataStoreService {
     { src: "./assets/home/boat-craft-3-bc-65-scaled.jpg" }
   ];
   private cards:any[] =[]
+  private galleryPhotos:string[]=[];
   constructor() { 
       this.cards =[
         {
@@ -380,7 +381,9 @@ export class DataStoreService {
         ]
       }
     ]
-    
+    for(let i = 1 ; i <= 12; i++){
+      this.galleryPhotos.push("./assets/gallery/photo"+i.toString()+".jpeg");
+    }
   }
 
   public getCardsData(){
@@ -412,5 +415,13 @@ export class DataStoreService {
        images.push(item["baseImageUrl"]+e);
     });
     return images;
+  }
+
+  public getPhotosForHome(){
+    return this.galleryPhotos.slice(0,8);
+  }
+
+  public getPhotosForGallery(){
+    return this.galleryPhotos;
   }
 }

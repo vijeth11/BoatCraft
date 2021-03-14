@@ -1,3 +1,4 @@
+import { DataStoreService } from './../data-store.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -10,10 +11,11 @@ export class GalleryComponent implements OnInit {
 
   public title:string = 'Photos';
   public pathMap:string[] = ['Home', this.title];
-  public gallery:string[] = new Array(15).fill("./assets/small-yatch.jpeg");
+  public gallery:string[] = [];
 
-  constructor(private router: Router) { 
+  constructor(private router: Router, private dataService:DataStoreService) { 
     window.scrollTo(0, 0);
+    this.gallery = this.dataService.getPhotosForGallery();
   }
 
   ngOnInit() {

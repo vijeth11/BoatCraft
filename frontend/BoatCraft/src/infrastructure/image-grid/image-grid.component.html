@@ -1,10 +1,13 @@
 <div class="row gallery-inner-wrapper" *ngFor ="let pictures of gallery; let i = index">
     <div [ngClass]="{'col-md-4 col-sm-4': columns == 3, 'col-sm-3 col-md-3': columns == 4, 'col-sm-2 col-md-2': columns == 6}"
      *ngFor="let picture of pictures; let j = index">
-      <div class="gallery-item">
-        <a href="">
-          <img [src]="getImageUrl(i,j)" alt="">
-        </a>
-      </div>
+      <div class="gallery-item" [style.background-image]="'url('+getImageUrl(i,j)+')'" (click)="openImage(i,j)"></div>
     </div>
+</div>
+
+<div id="myModal" class="Modal" *ngIf="modalVisible">
+  <div class="modal-content">
+    <span id="closeModal" class="Close" (click)="closeButton()">&times;</span>
+    <div class="modal-image" [style.background-image]="'url('+modalImage+')'"></div>
+  </div>
 </div>

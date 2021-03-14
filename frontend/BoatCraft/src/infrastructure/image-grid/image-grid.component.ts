@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
     selector: "image-grid",
@@ -6,9 +6,9 @@ import { Component, Input } from '@angular/core';
     styleUrls:["./image-grid.component.css"]
 })
 
-export class ImageGridComponent{
+export class ImageGridComponent implements AfterViewInit{
 
-    private _images:string[]=[]
+    private _images:string[]=[];
     gallery:number[][] = [];
     
     @Input() columns:number;
@@ -26,14 +26,40 @@ export class ImageGridComponent{
         return this. _images;
     }
     
-
+    public modalImage:string = "";
+    public modalVisible:boolean = false;
     constructor(){
         //this.gallery = new Array(this.images.length / this.columns).fill(1).map(_ => Array(this.images.length).fill(2).splice(0,this.columns));
     }
 
+
+    @HostListener('click',['$event'])
+    outsideClick(event:any){
+       if(event.target.className != "modal-content" 
+       && event.target.className != "modal-image" 
+       && this.modalVisible){
+           this.closeButton();
+       }
+    }
+
+    ngAfterViewInit(){
+        
+    }
     getImageUrl(i:number,j:number):string{
         if(this.images && this.columns){
             return this.images[i*this.columns+j];
         }
+    }
+
+    openImage(i:number,j:number){        
+        this.modalImage = this.getImageUrl(i,j);
+        setTimeout(()=>{
+            this.modalVisible = true; 
+        },0);               
+    }
+
+    closeButton(){
+        this.modalImage = "";
+        this.modalVisible = false;
     }
 }

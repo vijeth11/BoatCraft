@@ -17,7 +17,7 @@ export class DataStoreService {
         {
         "id": "BC36",
         "name": "Sea Warrior",
-        "price": "10,000",
+        "speed":"35 knots",
         "length": "9.35 Mtrs",
         "title": "Sea Warrior",
         "baseImageUrl":"./assets/Boat-Images/BC 36/",
@@ -45,7 +45,7 @@ export class DataStoreService {
       {
         "id": "BC20",
         "name": "BC 20",
-        "price": "10,000",
+        "speed":"30 knots",
         "length": "6.00 Mtrs",
         "title": "Base Model",
         "baseImageUrl":"./assets/Boat-Images/BC20/",
@@ -75,7 +75,7 @@ export class DataStoreService {
       {
         "id": "BC16",
         "name": "BC 16",
-        "price": "10,000",
+        "speed":"21 knots",
         "length": "5.00 Mtrs",
         "title": "Base Model",
         "baseImageUrl":"./assets/Boat-Images/BC16/",
@@ -102,7 +102,7 @@ export class DataStoreService {
       {
         "id": "BC30",
         "name": "BC30",
-        "price": "10,000",
+        "speed":"35 knots",
         "length": "11.44 Mtrs",
         "title": "BC 30",
         "baseImageUrl":"./assets/Boat-Images/BC30/",
@@ -127,7 +127,7 @@ export class DataStoreService {
       {
         "id": "BC30Parcil",
         "name": "PARASAIL",
-        "price": "10,000",
+        "Speed": "35 knots",
         "length": "9.35 Mtrs",
         "title": "PARASAIL",
         "baseImageUrl":"./assets/Boat-Images/BC 30 Parcil/",
@@ -154,7 +154,7 @@ export class DataStoreService {
       {
         "id": "BC42",
         "name": "BC 42",
-        "price": "10,000",
+        "Speed": "35 knots",
         "length": "13.09 Mtrs",
         "title": "BC 42",
         "baseImageUrl":"./assets/Boat-Images/BC42/",
@@ -182,7 +182,7 @@ export class DataStoreService {
       {
         "id": "BC20Parcil",
         "name": "SEA Quest",
-        "price": "10,000",
+        "Speed": "30 Knots",
         "length": "6.00 Mtrs",
         "title": "BC 20",
         "baseImageUrl":"./assets/Boat-Images/BC 20 Parcil/",
@@ -213,7 +213,7 @@ export class DataStoreService {
       {
         "id": "CATAMARAN",
         "name": "CATAMARAN",
-        "price": "10,000",
+        "speed": "10 Knots",
         "length": "15.00 Mtrs",
         "title": "CATAMARAN",
         "baseImageUrl":"./assets/Boat-Images/Cataraman/",
@@ -239,7 +239,7 @@ export class DataStoreService {
       {
         "id": "BC 30",
         "name": "PARASAIL WINCH",
-        "price": "10,000",
+        "speed": "35 Knots",
         "length": "9.35 Mtrs",
         "title": "PARASAIL WINCH",
         "baseImageUrl":"./assets/Boat-Images/BC30 Parcil Winch/",
@@ -268,7 +268,7 @@ export class DataStoreService {
       {
         "id": "BC 36",
         "name": "SEA WARRIOR",
-        "price": "10,000",
+        "speed": "18 Knots",
         "length": "15.00 Mtrs",
         "title": "SEA WARRIOR",
         "baseImageUrl":"./assets/Boat-Images/BC36/",
@@ -296,7 +296,7 @@ export class DataStoreService {
       {
         "id": "BC 65",
         "name": "BC65",
-        "price": "10,000",
+        "speed": "20 Knots",
         "length": "19.72 Mtrs",
         "title": "BC 65",
         "baseImageUrl":"./assets/Boat-Images/BC65/",
@@ -325,7 +325,7 @@ export class DataStoreService {
       {
         "id": "BC 16",
         "name": "Six Seater",
-        "price": "10,000",
+        "speed": "21 Knots",
         "length": "5.00 Mtrs",
         "title": "Six Seaters",
         "baseImageUrl":"./assets/Boat-Images/BC16 Six Seater/",
@@ -353,7 +353,7 @@ export class DataStoreService {
       {
         "id": "CATAMARAN2",
         "name": "CATAMARAN2",
-        "price": "10,000",
+        "speed": "21 Knots",
         "length": "13.55 Mtrs",
         "title": "CATAMARAN2",
         "baseImageUrl":"./assets/Boat-Images/Catraman2/",

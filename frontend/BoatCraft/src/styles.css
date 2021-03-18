@@ -18,3 +18,54 @@
     filter: blur(2px);
     -webkit-filter: blur(2px);
   }
+
+  .fade-in-left{
+    animation: fadeInLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes fadeInLeft {
+      0% {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+  }
+
+  .fade-in-right{
+    animation:fadeInRight;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes fadeInRight {
+    0%{
+      opacity : 0;
+      transform: translateX(50%)
+    }
+    100% {
+      opacity : 1;
+      transform: translateX(0)
+    }
+  }
+
+  .fade-in-Up{
+    animation:fadeInUp;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(30%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 

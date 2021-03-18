@@ -27,7 +27,10 @@
     float: left;
     background: #1a1f2b;
     height: fit-content;
+    visibility:hidden;
 }
+
+
 
 @media only screen and (max-width: 1700px){
     .about-us-block {
@@ -77,6 +80,7 @@
     background-image: url(/assets/home/About-Us.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
+    visibility: hidden;
 }
 
 .yatch-wrapper{
@@ -99,6 +103,7 @@
     max-width: calc(1140px - 30px);
     margin: 0 auto;
     padding: 0 15px;
+    visibility:hidden;
 }
 
 .yacht-title{
@@ -129,6 +134,7 @@
     background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/assets/home/boat-craft-2-bc-65-scaled.jpg");
     background-size: 100% 153%;
     background-repeat: no-repeat;
+    visibility: hidden;
 }
 
 .full-width-message-wrapper::after{

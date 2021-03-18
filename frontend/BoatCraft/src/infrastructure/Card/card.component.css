@@ -1,5 +1,6 @@
 .Yatch-card{
     width: 240px;
+    visibility: hidden;
 }
 
 .Yatch-image{
@@ -81,3 +82,20 @@
     line-height: 1;
     margin: 30px 0 0 30px;
 }
+
+.fade-in-Up{
+    animation:fadeInUp;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+  }
+
+  @keyframes fadeInUp {
+    0% {
+       opacity: 0;
+       transform: translateY(50%);
+    }
+    100% {
+       opacity: 1;
+       transform: translateY(0);
+    }
+ } 

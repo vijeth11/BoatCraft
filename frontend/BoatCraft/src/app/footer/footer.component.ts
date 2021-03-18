@@ -9,8 +9,8 @@ import { DataStoreService } from '../data-store.service';
 })
 export class FooterComponent implements OnInit {
 
-  listNames:string[] = ["Services","Designs","Photos","test2"]
-  careerNames:string[] = ["Sailor","Chef", "Boat Engineer"]
+  listNames:string[] = ["Services","Designs","Photos"]
+  careerNames:string[] = ["Helpers","Machanics", "Electricians","Spray Painters","Interior Designers"]
   listData:any[] = [];
   careerData:any[] = [];
   aboutPara:string=""

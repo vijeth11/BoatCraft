@@ -16,7 +16,7 @@ export class AboutComponent implements OnInit {
 
   constructor(private router: Router, private dataService:DataStoreService) {
     window.scrollTo(0, 0);
-    this.gallery = new Array(6).fill("./assets/small-yatch.jpeg");
+    this.gallery = this.dataService.getPhotosForAbout();
     console.log(this.gallery);
     this.aboutPara = this.dataService.getAbout();
    }

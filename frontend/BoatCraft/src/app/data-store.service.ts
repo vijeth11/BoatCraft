@@ -421,6 +421,10 @@ export class DataStoreService {
     return this.galleryPhotos.slice(0,8);
   }
 
+  public getPhotosForAbout(){
+    return this.galleryPhotos.slice(0,6);
+  }
+
   public getPhotosForGallery(){
     return this.galleryPhotos;
   }

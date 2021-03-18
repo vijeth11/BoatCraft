@@ -1,3 +1,4 @@
+import { style } from '@angular/animations';
 import { Component, Input, AfterViewInit, HostListener } from '@angular/core';
 
 @Component({
@@ -11,7 +12,7 @@ export class ImageGridComponent implements AfterViewInit{
     private _images:string[]=[];
     gallery:number[][] = [];
     
-    @Input() columns:number;
+    @Input() columns:number = 3;
     @Input() set images(values){
         this._images = values;
         if(this._images.length % this.columns == 0){
@@ -22,6 +23,9 @@ export class ImageGridComponent implements AfterViewInit{
             this.gallery.push(new Array(module_param).fill(2));
         }
     };
+
+    @Input() imageHeight:string="";
+    @Input() imageWidth:string="";
     get images() {
         return this. _images;
     }

@@ -183,6 +183,17 @@
     margin: 0 10%;
 }
 
+.full-width-owner-wrapper{
+    width:100%;
+    padding: 80px 0px;
+    background: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)), url("/assets/home/boat-craft-2-bc-65-scaled.jpg");
+    background-size: 100% 153%;
+    background-repeat: no-repeat;
+}
+
+.full-width-owner-wrapper::after{
+    opacity: 0.3;
+}
 .owners-detail{
     font-size:25px;
     text-align: center;

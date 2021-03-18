@@ -69,3 +69,53 @@
        transform: translateY(0);
     }
  } 
+
+ .fade-in-Down{
+  animation:fadeInDown;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes fadeInDown{
+  0% {
+     opacity: 0;
+     transform: translateY(-30%);
+  }
+  100% {
+     opacity: 1;
+     transform: translateY(0);
+  }
+} 
+
+ .fade-in{
+   animation:fadeIn;
+   animation-duration: 0.5s;
+   animation-timing-function: ease-in;
+ }
+
+ @keyframes fadeIn{
+   0%{
+     opacity:0;
+   }
+   100%{
+     opacity:1;
+   }
+ }
+
+ @keyframes zoominoutsinglefeatured {
+  0% {
+      transform: scale(1,1);
+  }
+  50% {
+      transform: scale(1.2,1.2);
+  }
+  100% {
+      transform: scale(1,1);
+  }
+}
+
+.zoom-in-out {
+  animation: zoominoutsinglefeatured;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+}

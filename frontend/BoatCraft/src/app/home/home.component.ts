@@ -20,7 +20,8 @@ export class HomeComponent implements OnInit {
   public cards = [];
   public gallery = [];
   public aboutPara:string="";
-  private elementsHidden:string[] = [CssClassNames.AboutUsBlock, CssClassNames.AboutUsBlockImage, CssClassNames.YatchSection, CssClassNames.MessageSection];
+  private elementsHidden:string[] = [CssClassNames.AboutUsBlock, CssClassNames.AboutUsBlockImage, 
+    CssClassNames.YatchSection, CssClassNames.MessageSection, CssClassNames.PhotoGallerySection, CssClassNames.OwnerDetails];
   constructor(private router:Router, private dataService:DataStoreService, private el:ElementRef, private renderer:Renderer2) {
     
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
@@ -46,6 +47,12 @@ export class HomeComponent implements OnInit {
           case CssClassNames.MessageSection:
                 this.renderer.addClass(ele,AnimationConstants.FadeInUp);
                 break;
+          case CssClassNames.PhotoGallerySection:
+                this.renderer.addClass(ele,AnimationConstants.FadeIn);
+                break;
+          case CssClassNames.OwnerDetails:
+              this.renderer.addClass(ele, AnimationConstants.FadeInDown);
+              break;
         }
         this.elementsHidden.splice(this.elementsHidden.indexOf(className),1);
       }

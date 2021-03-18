@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, HostListener, ElementRef, Renderer2 } from '@angular/core';
+import { Component, Input, Output, EventEmitter, HostListener, ElementRef, Renderer2, AfterViewInit } from '@angular/core';
 
 @Component({
     selector: 'app-card',
@@ -6,21 +6,30 @@ import { Component, Input, Output, EventEmitter, HostListener, ElementRef, Rende
     styleUrls: ['./card.component.css'],  
 })
 
-export class CardComponent {
+export class CardComponent implements AfterViewInit {
 
 @Input() title:string = "";
 @Input() speed:string;
 @Input() length:string;
 @Input() name:string;
 @Input() id:number;
-@Input() index:number;
+@Input() index:number = 0;
 @Input() displayDefaultContent:boolean = true;
 @Input() displayButton:boolean = false;
 @Input() width:number = 240;
 @Input() images:string[]=[];
 @Output() reDirect: EventEmitter<number> = new EventEmitter<number>()
 
-constructor(private el: ElementRef,private renderer:Renderer2){}
+constructor(private el: ElementRef,private renderer:Renderer2){
+
+}
+
+ngAfterViewInit(){
+  if(this.displayButton){
+    this.onScroll(null);
+  }
+}
+
 onReDirect(){
   this.reDirect.emit(this.id);  
 }
@@ -29,7 +38,7 @@ onReDirect(){
 onScroll(event){
   let element = this.el.nativeElement.getElementsByClassName("Yatch-card").length > 0 ? this.el.nativeElement.getElementsByClassName("Yatch-card")[0]: undefined;
   if(element){
-    if(element.getBoundingClientRect().top <= (document.documentElement.clientHeight / 2)){
+    if(element.getBoundingClientRect().top <= ((document.documentElement.clientHeight / 4)*3)){
       setTimeout(() => {
         element.style.visibility="visible";
         this.renderer.addClass(element,'fade-in-Up');

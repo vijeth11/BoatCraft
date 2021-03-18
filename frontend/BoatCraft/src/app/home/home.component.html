@@ -4,6 +4,7 @@
     [displayCaption]="true"
     [title]="title"
     [discription]="discription"
+    [autoScroll] = "true"
     (changeUrl)="changeTheRoute($event)">
       <ng-container *ngFor="let slide of getSlides();">
         <img appCarouselSlide

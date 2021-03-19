@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { CarouselComponent } from './carousel/carousel.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directive';
+import { ModalComponent } from './Modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
     CardComponent,
     ImageGridComponent,
     PageHeaderComponent,
+    ModalComponent,
   ],
   imports: [
     CommonModule,
@@ -25,6 +27,7 @@ import { CarouselSlideDirective } from './carousel-slide/carousel-slide.directiv
     CardComponent,
     ImageGridComponent,
     PageHeaderComponent,
+    ModalComponent,
   ]
 })
 export class InfrastructureModule { }

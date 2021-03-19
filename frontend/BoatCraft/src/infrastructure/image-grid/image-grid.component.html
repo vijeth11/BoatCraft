@@ -5,9 +5,6 @@
     </div>
 </div>
 
-<div id="myModal" class="Modal" *ngIf="modalVisible">
-  <div class="modal-content">
-    <span id="closeModal" class="Close" (click)="closeButton()">&times;</span>
-    <div class="modal-image" [style.background-image]="'url('+modalImage+')'"></div>
-  </div>
-</div>
+<Modal (close)="closeButton()" *ngIf="modalVisible">
+  <div class="modal-image" [style.background-image]="'url('+modalImage+')'"></div>
+</Modal>

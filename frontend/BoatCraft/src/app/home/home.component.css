@@ -252,3 +252,34 @@
     width: 85%;
     margin: 0 auto;
 }
+
+.Career{
+    background-image: linear-gradient(to bottom right, orange, white);
+    width: 100%;
+    height: 100%;
+}
+
+.Career-Card{
+    width: 317px;
+    margin: 14% auto;
+}
+
+.Career-Card h1{
+    font: size 20px;
+}
+
+.Career-Card h2{
+    font-size: 21px;
+    color: orange;
+}
+
+.Career-Card a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: orange;
+    cursor: pointer;
+}

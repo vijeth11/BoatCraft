@@ -133,3 +133,23 @@
     </div>
   </div>
 </div>
+
+<Modal (close)="closeButton()" *ngIf="modalVisible">
+  <div class="Career">
+    <div class="Career-Card">
+      <h1>We're looking for</h1>
+      <h2>talented indivisuals</h2>
+      <p>
+        who share our passion to be the
+        best and achieve their full potential
+      </p>
+      <p style="margin-top:-6%">
+        <strong>
+          Beacause when our associates
+          succeed, we all do.
+        </strong>
+      </p>
+      <a (click)="changeTheRoute('career')"> Join Us </a>
+    </div>
+  </div>
+</Modal>

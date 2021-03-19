@@ -10,6 +10,7 @@ export class DataStoreService {
     { src: "./assets/home/boat-craft-2-bc-65-scaled.jpg" },
     { src: "./assets/home/boat-craft-3-bc-65-scaled.jpg" }
   ];
+  private careerModalDispaly: number = 0;
   private cards:any[] =[]
   private galleryPhotos:string[]=[];
   constructor() { 
@@ -427,5 +428,14 @@ export class DataStoreService {
 
   public getPhotosForGallery(){
     return this.galleryPhotos;
+  }
+
+  public getCareerModalDisplayCount()
+  {
+    return this.careerModalDispaly;
+  }
+
+  public setCareerModalDisplayCount(){
+    this.careerModalDispaly = 1;
   }
 }

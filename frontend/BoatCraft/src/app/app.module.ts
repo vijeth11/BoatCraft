@@ -14,6 +14,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { DesignsComponent } from './designs/designs.component';
 import { ServiceComponent } from './service/service.component';
 import { DesignDetailComponent } from './design-detail/design-detail.component';
+import { CareerComponent } from './career/career.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,6 +27,7 @@ import { DesignDetailComponent } from './design-detail/design-detail.component';
     DesignsComponent,
     ServiceComponent,
     DesignDetailComponent,
+    CareerComponent,
   ],
   imports: [
     BrowserModule,

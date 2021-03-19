@@ -22,12 +22,23 @@ export class HomeComponent implements OnInit {
   public aboutPara:string="";
   private elementsHidden:string[] = [CssClassNames.AboutUsBlock, CssClassNames.AboutUsBlockImage, 
     CssClassNames.YatchSection, CssClassNames.MessageSection, CssClassNames.PhotoGallerySection, CssClassNames.OwnerDetails];
+  public modalVisible:boolean = false;
+
   constructor(private router:Router, private dataService:DataStoreService, private el:ElementRef, private renderer:Renderer2) {
     
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
     console.log(this.gallery);
     this.aboutPara = this.dataService.getAbout()[0];
    }
+
+   @HostListener('click',['$event'])
+    outsideClick(event:any){
+       if(event.target.className != "modal-content" 
+       && event.target.className != "modal-image" 
+       && this.modalVisible){
+           this.closeButton();
+       }
+    }
 
    @HostListener('window:scroll', ['$event']) 
    onScroll(event){
@@ -59,6 +70,14 @@ export class HomeComponent implements OnInit {
     });
     console.log(this.elementsHidden);
    }
+
+   ngAfterViewInit(){
+     if(this.dataService.getCareerModalDisplayCount() == 0){
+      this.modalVisible = true;
+      this.dataService.setCareerModalDisplayCount();
+     }
+   }
+
    changeTheRoute(data:string){
       this.router.navigate([data]);
    }
@@ -92,5 +111,9 @@ export class HomeComponent implements OnInit {
       return element.getBoundingClientRect().top <= (document.documentElement.clientHeight / 2);
     }
     return false;
+  }
+
+  closeButton(){
+    this.modalVisible = false;
   }
 }

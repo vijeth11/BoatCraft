@@ -1,1 +1,49 @@
-<h1>Need to be implemented</h1>
+<div class="row">
+  <div class="col-sm-12 col-md-12 carousal">
+    <div class="career-image">
+      <div class="Career fade-in-left">
+        <div class="Career-Card">
+          <h1>We're looking for</h1>
+          <h2>talented indivisuals</h2>
+          <p>
+            who share our passion to be the
+            best and achieve their full potential
+          </p>
+          <p style="margin-top:-6%">
+            <strong>
+              Beacause when our associates
+              succeed, we all do.
+            </strong>
+          </p>
+        </div>
+      </div>
+      <div class="Career-heading fade-in-Down">
+        <h1>Career</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="career-info col-sm-12 col-md-12">
+    <div class="career-form">
+      <h2>Details About You</h2>
+      <form [formGroup]="careerForm" (ngSubmit)="onSubmit()">
+        <label>Name <span>*</span></label>
+        <input type="text" name="your-name" formControlName="name"/>
+        <label>Email <span>*</span></label>
+        <input type="email" name="your-email" formControlName="email"/>
+        <label>Phone</label>
+        <input type="text" name="phone" formControlName="phone"/>
+        <label>Position</label>
+        <select name="career-option" formControlName="careerselected">
+          <option value = ""> Please Select</option>
+          <option *ngFor="let item of careers;" [value]="item">{{ item }}</option>                   
+        </select>
+        <label>About Yourself<span>*</span></label>
+        <textarea type="text" name="message" formControlName="about"></textarea>
+        <br/>
+        <input type="submit" class="submit" [disabled]="!contactForm.valid" value="Submit Application"/>
+      </form>
+    </div>
+  </div>
+</div>

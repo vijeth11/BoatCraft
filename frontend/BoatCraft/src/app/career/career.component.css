@@ -1,0 +1,116 @@
+.carousal{
+    max-height: 300px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 300px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+    margin-left : 0;
+    margin-right : 0;
+}
+
+.career-image{
+    background-image: url("/assets/career.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Career-Card{
+    width: 317px;
+    margin-top: 4%;
+    margin-left: 12%;
+    position: absolute;
+}
+
+.Career-Card h1{
+    font: size 20px;
+}
+
+.Career-Card h2{
+    font-size: 21px;
+    color: orange;
+}
+
+.Career-Card a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    background: orange;
+    cursor: pointer;
+}
+
+.Career-heading{
+    text-align: center;
+    margin-top: 8%;
+    position: absolute;
+    margin-left: 45%;
+}
+
+.Career-heading h1{
+    color: white;
+    font-size: 60px;
+}
+
+.career-info{
+    background-color: #F4F4F4;
+}
+.career-form{
+    text-align:center;    
+    margin-top:3%;
+}
+
+.career-form form{
+    margin-top: 5%;
+}
+.career-form label{
+    font-size: 21px;   
+    margin: 0 0 9px -20vw;
+    display: block;
+}
+
+.career-form label span{
+    color: red;
+}
+
+.career-form input, .career-form select{
+    width:calc(100% - 70%);
+    font-size: 14px;
+    border: black 1px solid;
+    padding: 12px 13px 12px 13px;
+    margin: 0 0 20px 0;
+    font-family: 'Source Sans Pro', sans-serif;
+    background-color: #F4F4F4
+}
+
+.career-form textarea{
+    width:calc(100% - 70%);
+    font-size: 14px;    
+    border: black 1px solid;
+    padding: 12px 13px 12px 13px;
+    margin: 0 0 20px 0;
+    min-height: 140px;
+    background-color: #F4F4F4;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.career-form .submit{
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 25px;
+    cursor: pointer;
+    float: none;
+    margin: 0;
+    background: #85a5cc;
+    width: 30%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}

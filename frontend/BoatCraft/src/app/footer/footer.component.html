@@ -47,7 +47,7 @@
         <div class="title-block"></div>
         <div class="textwidget">
           <ul class="options">
-            <li *ngFor="let item of careerData"><div [style.top]="item.style"></div>{{item.name}}</li>              
+            <li *ngFor="let item of careerData" (click)="redirect('career')"><div [style.top]="item.style"></div>{{item.name}}</li>              
           </ul>
         </div>
       </div>

@@ -40,9 +40,9 @@
           <option *ngFor="let item of careers;" [value]="item">{{ item }}</option>                   
         </select>
         <label>About Yourself<span>*</span></label>
-        <textarea type="text" name="message" formControlName="about"></textarea>
+        <textarea type="text" name="about" formControlName="about"></textarea>
         <br/>
-        <input type="submit" class="submit" [disabled]="!contactForm.valid" value="Submit Application"/>
+        <input type="submit" class="submit" [disabled]="!careerForm.valid" value="Submit Application"/>
       </form>
     </div>
   </div>

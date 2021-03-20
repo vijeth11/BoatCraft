@@ -27,7 +27,6 @@ export class HomeComponent implements OnInit {
   constructor(private router:Router, private dataService:DataStoreService, private el:ElementRef, private renderer:Renderer2) {
     
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
-    console.log(this.gallery);
     this.aboutPara = this.dataService.getAbout()[0];
    }
 
@@ -68,7 +67,6 @@ export class HomeComponent implements OnInit {
         this.elementsHidden.splice(this.elementsHidden.indexOf(className),1);
       }
     });
-    console.log(this.elementsHidden);
    }
 
    ngAfterViewInit(){

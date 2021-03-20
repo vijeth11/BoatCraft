@@ -66,7 +66,6 @@ export class CarouselComponent implements OnInit, AfterContentInit {
   onPreviousClick(manualClick:boolean) {
     this.previouSlide = this.currentSlide;
     this.currentSlide = (this.previouSlide - 1) < 0 ? this.slides.length - 1 : this.previouSlide - 1;
-    console.log("previous clicked, new current slide is: ", this.currentSlide);
     this.displayCurrentSlide();
     if(manualClick){
       this.stopAndRestartScroll();
@@ -76,7 +75,6 @@ export class CarouselComponent implements OnInit, AfterContentInit {
   onNextClick(manualClick:boolean) {
     this.previouSlide = this.currentSlide;
     this.currentSlide = (this.previouSlide + 1) === this.slides.length ? 0 : this.previouSlide + 1;
-    console.log("next clicked, new current slide is: ", this.currentSlide);
     this.displayCurrentSlide();
     if(manualClick){
       this.stopAndRestartScroll();

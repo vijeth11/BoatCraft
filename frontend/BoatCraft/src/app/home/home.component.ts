@@ -24,7 +24,11 @@ export class HomeComponent implements OnInit {
     CssClassNames.YatchSection, CssClassNames.MessageSection, CssClassNames.PhotoGallerySection, CssClassNames.OwnerDetails];
   public modalVisible:boolean = false;
 
-  constructor(private router:Router, private dataService:DataStoreService, private el:ElementRef, private renderer:Renderer2) {
+  constructor(
+    private router:Router, 
+    private dataService:DataStoreService, 
+    private el:ElementRef, 
+    private renderer:Renderer2) {
     
     this.gallery = new Array(8).fill("./assets/small-yatch.jpeg");
     this.aboutPara = this.dataService.getAbout()[0];

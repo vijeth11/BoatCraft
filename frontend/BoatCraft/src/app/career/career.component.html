@@ -41,7 +41,9 @@
         </select>
         <label>About Yourself<span>*</span></label>
         <textarea type="text" name="about" formControlName="about"></textarea>
-        <br/>
+        <label>Resume<span>*</span></label>
+        <input type="file" id="resume" name="resume" formControlName="resume">
+        <br>
         <input type="submit" class="submit" [disabled]="!careerForm.valid" value="Submit Application"/>
       </form>
     </div>

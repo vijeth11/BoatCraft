@@ -13,7 +13,8 @@ export class CareerComponent implements OnInit {
     email: new FormControl(''),
     phone: new FormControl(''),
     careerselected: new FormControl(''),
-    about: new FormControl('')
+    about: new FormControl(''),
+    resume: new FormControl('')
   });
 
   public careers: string[] = ["Helpers","Machanics","Electicians","Spray Painters","Interior Designers"];

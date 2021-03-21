@@ -19,14 +19,14 @@ export class FooterComponent implements OnInit {
     for(let i=0; i< this.listNames.length;i++) {
         this.listData.push({
           'name':this.listNames[i],
-          'style':"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)",
+          'style': document.body.clientWidth <= 500 ? "calc(58% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)" :"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)",
           'url': this.listNames[i].toLowerCase()
         });
     }
     for(let i=0; i< this.careerNames.length;i++) {
       this.careerData.push({
         'name':this.careerNames[i],
-        'style':"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)"
+        'style': document.body.clientWidth <= 500 ? "calc(45% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)" :"calc(32% - "+ (i==0 ? "4" : "-"+(4 * 5 + (i-1) * 24 )) +"px)"
       });
     }
   }

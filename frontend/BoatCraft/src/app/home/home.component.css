@@ -50,9 +50,44 @@
         padding: 40px 5% 0 5%;
         width: 100%;
     }
-    
+
     .full-width-message-inner-wrapper{
         margin: 0 0; 
+        width: 100% !important;
+    }
+
+    .full-width-message-wrapper{
+        padding: 53px 0px !important;
+        
+    }
+
+    .full-width-message-wrapper .viewYatch{
+        position: absolute;
+        right: 15vw;
+    }
+
+    .full-width-message-wrapper .getTouch{
+        position: absolute;
+        left: 15vw;
+    }
+    .full-width-message-wrapper .getTouch .button0, 
+    .full-width-message-wrapper .viewYatch  .button0{
+        padding: 8px 25px !important;
+    }
+
+    .about-owner-open-qoute{
+        position: absolute !important;
+        top: 6vh  !important;
+    }
+
+    .about-owner-close-qoute{
+        position: absolute !important;
+        top: 30vh !important;
+        right: 4vw !important;
+    }
+
+    .about-owner-innerwrapper .user-paragraph{
+        left:7vw;
     }
 }
 .about-us-block h3{

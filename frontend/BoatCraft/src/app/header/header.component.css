@@ -18,6 +18,8 @@
     margin: 0 auto;
 }
 
+
+
 #primary-headerOptions{
     margin-left: 5vw;
     margin-top: 1.5vh;
@@ -28,4 +30,15 @@
     font-size: 16px;
     display: block;
     color: #424242;
+}
+
+@media (max-width:500px){
+    .inner-width{
+        width: 100% !important;
+    }
+
+    .navbar-brand img{
+        height: 30px !important;
+        width: 200px !important;
+    }
 }

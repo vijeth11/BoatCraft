@@ -21,3 +21,9 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  @media(max-width:500px){
+    .gallery-item{
+      width: 80vw;
+    }
+  }

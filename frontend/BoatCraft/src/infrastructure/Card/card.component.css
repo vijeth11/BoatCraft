@@ -99,3 +99,19 @@
        transform: translateY(0);
     }
  } 
+
+
+ @media(max-width:500px){
+    .Yatch-card{
+        width: 100% !important;
+    }
+
+    .Yatch-image img{
+        width:100% !important;
+    }
+
+    .col-sm-3, .col-md-3{
+        padding-right: 60px;
+        padding-left: 60px;
+    }
+ }

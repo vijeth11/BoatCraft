@@ -30,7 +30,10 @@
     visibility:hidden;
 }
 
-
+.full-width-message-inner-wrapper{
+    margin: 0 10%; 
+    width: 80%
+}
 
 @media only screen and (max-width: 1700px){
     .about-us-block {
@@ -39,6 +42,19 @@
     }
 }
 
+@media (max-width: 500px){
+    .carousal{
+        height: 300px !important;
+    }
+    .about-us-block {
+        padding: 40px 5% 0 5%;
+        width: 100%;
+    }
+    
+    .full-width-message-inner-wrapper{
+        margin: 0 0; 
+    }
+}
 .about-us-block h3{
     color: #fff;
     margin: 0 0 30px 0;

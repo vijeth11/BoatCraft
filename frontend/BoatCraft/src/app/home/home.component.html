@@ -4,7 +4,7 @@
     [displayCaption]="true"
     [title]="title"
     [discription]="discription"
-    [autoScroll] = "true"
+    [autoScroll] = "false"
     (changeUrl)="changeTheRoute($event)">
       <ng-container *ngFor="let slide of getSlides();">
         <img appCarouselSlide
@@ -75,7 +75,7 @@
 <div class="row">
   <div class="col-md-12 col-sm-12">
     <div class="full-width-message-wrapper">
-      <div  style="margin: 0 10%; width: 80%">
+      <div  class="full-width-message-inner-wrapper">
         <div class="full-width-inner">
           <h3>
             Our huge selection of yachts and Boats allow you to have precisely the type of sailing experience you wish

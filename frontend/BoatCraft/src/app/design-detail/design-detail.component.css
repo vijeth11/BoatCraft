@@ -160,3 +160,28 @@
     text-align: left;
     vertical-align: top;
 }
+
+
+@media (max-width:500px){
+    .content-wrapper{
+        width: 100% !important;
+    }
+
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .main-content{
+        padding: 0 15px 0 15px !important;
+        border-right: none  !important;
+    }
+
+    .carousal{
+        height: 220px !important;
+    }
+
+    .yacht-specs table td {
+        padding: 9px 9px !important;
+    }
+}

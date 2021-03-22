@@ -139,3 +139,18 @@ p{
     background: #85a5cc;
     width: 30%;
 }
+
+@media (max-width:500px){
+    .content-wrapper{
+        width: 100% !important;
+    }
+
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .contact-form .submit{
+        margin-bottom: 3vh;
+    }
+}

@@ -34,3 +34,14 @@ p{
     margin: 0 0 30px 0;
 }
 
+
+@media (max-width:500px){
+    .content-wrapper{
+        width: 100% !important;
+    }
+
+    .row{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}

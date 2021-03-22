@@ -165,3 +165,64 @@
     font-weight: 400;
     font-size: 17px;
   }
+
+  .UnderLine{
+    margin-left:39%;
+  }
+
+  @media(max-width:500px){
+    .control.prev{
+      width: 60px !important;
+      height: 60px !important;
+      top: 35% !important;
+    }
+    .control.next{
+      width: 60px !important;
+      height: 60px !important;
+      top: 35% !important;
+    }
+    .control{
+      padding: 0.3rem !important;
+    }
+
+    .caption{
+      width: 65vw !important;
+      left: 18vw !important;
+      height: 38vh !important;
+      top: 4vh !important;
+      padding: 6px 20px 6px 20px;
+    }
+
+    .caption .title{
+      font-size:38px;
+    }
+
+    .UnderLine{
+      margin-left: 32%;
+    }
+    
+    .Border-line{
+      margin: 6px 0px 14px;
+    }
+
+    .caption .discription{
+      font-size: 16px !important;
+    }
+
+    .caption .page-buttons{
+      margin-top: 2vh !important;
+    }
+    
+    .photo-button{
+      position: absolute;
+    }
+
+    .about-button{
+      position: absolute;
+    }
+
+    .page-buttons a{
+      margin:0px 33px 0px 33px;
+      padding: 13px 25px;
+    }
+  }

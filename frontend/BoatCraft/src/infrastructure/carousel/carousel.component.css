@@ -188,7 +188,7 @@
     .caption{
       width: 65vw !important;
       left: 18vw !important;
-      height: 38vh !important;
+      height: 42vh !important;
       top: 4vh !important;
       padding: 6px 20px 6px 20px;
     }
@@ -200,7 +200,7 @@
     .UnderLine{
       margin-left: 32%;
     }
-    
+
     .Border-line{
       margin: 6px 0px 14px;
     }
@@ -211,18 +211,20 @@
 
     .caption .page-buttons{
       margin-top: 2vh !important;
-    }
+      display: flex !important;
+      flex-flow: column !important;
+    }   
     
-    .photo-button{
-      position: absolute;
-    }
-
-    .about-button{
-      position: absolute;
+    .caption .page-buttons .row{
+      display:block !important;
     }
 
     .page-buttons a{
-      margin:0px 33px 0px 33px;
-      padding: 13px 25px;
+      margin:0px 5vw;
+      padding: 13px;
+    }
+
+    .caption{
+      padding: 6px !important;
     }
   }

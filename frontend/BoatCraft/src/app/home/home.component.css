@@ -288,6 +288,11 @@
     cursor: pointer;
 }
 
+.viewYatch{
+    margin-left: 35%;
+    margin-right: 6%;
+}
+
 @media (max-width: 500px){
     .carousal{
         height: 300px !important;
@@ -310,6 +315,7 @@
     .full-width-message-wrapper .viewYatch{
         position: absolute;
         right: 15vw;
+        margin: 0 0;
     }
 
     .full-width-message-wrapper .getTouch{

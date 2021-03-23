@@ -38,7 +38,7 @@ onReDirect(){
 onScroll(event){
   let element = this.el.nativeElement.getElementsByClassName("Yatch-card").length > 0 ? this.el.nativeElement.getElementsByClassName("Yatch-card")[0]: undefined;
   if(element){
-    if(element.getBoundingClientRect().top <= ((document.documentElement.clientHeight / 4)*3)){
+    if(element.getBoundingClientRect().top <= ((document.documentElement.clientHeight <= 500 ? (document.documentElement.clientHeight/ 4)*3 : (document.documentElement.clientHeight/ 7)*6))){
       setTimeout(() => {
         element.style.visibility="visible";
         this.renderer.addClass(element,'fade-in-Up');

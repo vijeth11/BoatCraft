@@ -39,7 +39,7 @@
           <option value = ""> Please Select</option>
           <option *ngFor="let item of careers;" [value]="item">{{ item }}</option>                   
         </select>
-        <label>About Yourself<span>*</span></label>
+        <label class="about-lable">About Yourself<span>*</span></label>
         <textarea type="text" name="about" formControlName="about"></textarea>
         <label>Resume<span>*</span></label>
         <input type="file" id="resume" name="resume" formControlName="resume">

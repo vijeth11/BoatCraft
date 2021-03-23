@@ -114,3 +114,55 @@
     margin-top: 2%;
     margin-bottom: 4%;
 }
+
+@media(max-width:500px){
+
+    .carousal {        
+        height: 260px
+    }
+
+    .Career-Card {
+        width: 220px;
+        margin-left: 4%;
+    }
+
+    .Career-Card h1{
+        font-size: 25px;
+    }
+
+    .Career-Card h2{
+        font-size: 16px;
+    }
+
+    .Career-heading h1 {
+        font-size: 35px;
+    }
+
+    .Career-heading {
+        margin-top: 19%;
+        margin-left: 68%;
+    }
+
+    .career-form input, .career-form select{
+        width: 100%;
+        padding: 8px 7px 8px 13px;
+    }
+
+    .career-form label {
+        font-size: 17px;
+        margin: 0 0 9px -76vw;
+    }
+
+    .about-lable{
+        margin-left: -63vw !important;
+    }
+
+    .career-form textarea {
+        width: 100%;
+    }
+
+    .career-form .submit {       
+        font-size: 13px;
+        width: 40%;
+    }
+}

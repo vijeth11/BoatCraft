@@ -28,4 +28,8 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+
+    .modal-image{
+      background-size: contain !important;
+    }
   }

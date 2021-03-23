@@ -44,3 +44,10 @@
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media(max-width:500px){
+    .modal-content{
+      max-width: 100vw !important;
+      height: 40vh !important;
+    }
+  }

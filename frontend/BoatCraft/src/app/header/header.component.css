@@ -3,8 +3,12 @@
     font-family: 'Source Serif Pro', serif;    
     float: left;
     color: #424242;
+    padding: 0 0 !important;
 }
 
+.navbar{
+    padding: 0 0 !important;
+}
 .primary-header{
     background-color:white;
     box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 30%);   
@@ -30,6 +34,10 @@
     color: #424242;
 }
 
+.nav-item a:hover{
+    cursor: pointer;
+}
+
 @media (max-width:500px){
     .inner-width{
         width: 100% !important;
@@ -38,9 +46,5 @@
     .navbar-brand img{
         height: 80px !important;
         width: 150px !important;
-    }
-
-    .nav-item a:hover{
-        cursor: pointer;
     }
 }

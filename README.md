@@ -1,6 +1,6 @@
 # BoatCraft
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.3.
+This project is webpage of company selling Ships and Yatchs. If anyone wants it i can sell. It uses Angular8 technology.
 
 ## Development server
 
